@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ігор “Слон” Утюж</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page">
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header-inner">
+
+      <div class="header-logo">
+        <div class="header-logo-mark">S</div>
+        SLON
+      </div>
+
+      <nav class="header-nav">
+        <a href="#about" data-i18n="menu_about"></a>
+        <a href="#war-path" data-i18n="menu_warpath"></a>
+        <a href="#life" data-i18n="menu_life"></a>
+        <a href="#symbols" data-i18n="menu_symbols"></a>
+        <a href="#gratitude" data-i18n="menu_gratitude"></a>
+      </nav>
+
+    <div class="header-lang">
+      <button data-lang="ua" class="is-active" onclick="setLanguage('uk')">UA</button>
+      <button data-lang="en" onclick="setLanguage('en')">EN</button>
+    </div>
+
+
+    </div>
+
+<!--     <div class="lang-switcher">
+        <button onclick="setLanguage('uk')">UA</button>
+        <button onclick="setLanguage('en')">EN</button>
+    </div>   -->  
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-inner">
+
+      <div class="hero-photo-wrap">
+        <div class="hero-photo">
+          <img src="img/hero-portrait.jpg" alt="Ігор Утюж" />
+        </div>
+        <div class="hero-photo-overlay"></div>
+        <div class="hero-photo-mark">СЛОН</div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-kicker" data-i18n="hero_kicker"></div>
+        <h1 class="hero-title" data-i18n="hero_title"></h1>
+        <div class="hero-years" data-i18n="hero_years"></div>
+
+        <p class="hero-text" data-i18n="hero_text"></p>
+
+        <div class="hero-actions">
+          <a href="#war-path" class="btn btn-primary" data-i18n="hero_action_warpath"></a>
+          <a href="#life" class="btn btn-ghost" data-i18n="hero_action_life"></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about">
+    <div class="section-inner about-inner">
+
+      <div class="about-line"></div>
+
+      <div class="section-header">
+        <div class="section-kicker" data-i18n="section_kicker"></div>
+        <h2 class="section-title" data-i18n="section_title"></h2>
+        <p class="section-subtitle" data-i18n="section_subtitle"></p>
+      </div>
+
+      <div class="about-block">
+        <div class="about-block-title" data-i18n="about_block_title"></div>
+        <div class="about-block-text" data-i18n="about_block_text"></div>
+      </div>
+
+      <div class="about-block">
+        <div class="about-block-title" data-i18n="about_block_title_before_war"></div>
+        <div class="about-block-text" data-i18n="about_block_text_before_war"></div>
+      </div>
+
+      <div class="about-block">
+        <div class="about-block-title" data-i18n="about_block_title_beginning_service"></div>
+        <div class="about-block-text" data-i18n="about_block_text_beginning_service"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== WAR PATH ===== -->
+  <section id="war-path" class="section war-path">
+    <div class="war-path-inner">
+
+      <div>
+        <div class="section-header">
+          <div class="section-kicker" data-i18n="section_kicker_warpath"></div>
+          <h2 class="section-title" data-i18n="section_title_warpath"></h2>
+          <p class="section-subtitle" data-i18n="section_subtitle_warpath"></p>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-year" data-i18n="timeline_year_volunteer_decision"></div>
+            <div class="timeline-title" data-i18n="timeline_title_volunteer_decision"></div>
+            <div class="timeline-text" data-i18n="timeline_text_volunteer_decision"></div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year" data-i18n="timeline_year_first_battles"></div>
+            <div class="timeline-title" data-i18n="timeline_title_first_battles"></div>
+            <div class="timeline-text" data-i18n="timeline_text_first_battles"></div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year" data-i18n="timeline_year_last_battle"></div>
+            <div class="timeline-title" data-i18n="timeline_title_last_battle"></div>
+            <div class="timeline-text" data-i18n="timeline_text_last_battle"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="war-path-photos">
+
+        <div class="war-photo-card">
+          <img src="img/war1.jpg" alt="" />
+          <div class="war-photo-caption" data-i18n="war_photo_caption_1"></div>
+        </div>
+
+        <div class="war-photo-card">
+          <img src="img/war2.jpg" alt="" />
+          <div class="war-photo-caption" data-i18n="war_photo_caption_2"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== LIFE FRAGMENTS ===== -->
+  <section id="life" class="section life-fragments">
+    <div class="section-inner">
+
+      <div class="section-header">
+        <div class="section-kicker" data-i18n="section_kicker_life_fragments"></div>
+        <h2 class="section-title" data-i18n="section_title_life_fragments"></h2>
+        <p class="section-subtitle" data-i18n="section_subtitle_life_fragments"></p>
+      </div>
+
+      <div class="life-grid">
+
+        <div class="life-card">
+          <div class="life-card-img">
+            <img src="img/life1.jpg" alt="" />
+            <div class="life-card-overlay"></div>
+            <div class="life-card-quote" data-i18n="life_card_quote_1"></div>
+          </div>
+          <div class="life-card-body">
+            <div class="life-card-title" data-i18n="life_card_title_1"></div>
+            <div class="life-card-text" data-i18n="life_card_text_1"></div>
+          </div>
+        </div>
+
+        <div class="life-card">
+          <div class="life-card-img">
+            <img src="img/life2.jpg" alt="" />
+            <div class="life-card-overlay"></div>
+            <div class="life-card-quote" data-i18n="life_card_quote_2"></div>
+          </div>
+          <div class="life-card-body">
+            <div class="life-card-title" data-i18n="life_card_title_2"></div>
+            <div class="life-card-text" data-i18n="life_card_text_2"></div>
+          </div>
+        </div>
+
+        <div class="life-card">
+          <div class="life-card-img">
+            <img src="img/life3.jpg" alt="" />
+            <div class="life-card-overlay"></div>
+            <div class="life-card-quote" data-i18n="life_card_quote_3"></div>
+          </div>
+          <div class="life-card-body">
+            <div class="life-card-title" data-i18n="life_card_title_3"></div>
+            <div class="life-card-text" data-i18n="life_card_text_3"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== SYMBOLS ===== -->
+  <section id="symbols" class="section symbols">
+    <div class="symbols-inner">
+
+      <div class="section-header">
+        <div class="section-kicker" data-i18n="section_kicker_symbols"></div>
+        <h2 class="section-title" data-i18n="section_title_symbols"></h2>
+        <p class="section-subtitle" data-i18n="section_subtitle_symbols"></p>
+      </div>
+
+      <div class="symbols-grid">
+
+        <div class="symbol-card">
+          <div class="symbol-icon">🐘</div>
+          <div class="symbol-title" data-i18n="symbol_title_slon"></div>
+          <div class="symbol-text" data-i18n="symbol_text_slon"></div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">🛡️</div>
+          <div class="symbol-title" data-i18n="symbol_title_shield"></div>
+          <div class="symbol-text" data-i18n="symbol_text_shield"></div>
+        </div>
+
+        <div class="symbol-card">
+          <div class="symbol-icon">🇺🇦</div>
+          <div class="symbol-title" data-i18n="symbol_title_ukraine"></div>
+          <div class="symbol-text" data-i18n="symbol_text_ukraine"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== GRATITUDE ===== -->
+  <section id="gratitude" class="section gratitude">
+    <div class="gratitude-inner">
+
+      <div class="section-header">
+        <div class="section-kicker" data-i18n="section_kicker_gratitude"></div>
+        <h2 class="section-title" data-i18n="section_title_gratitude"></h2>
+      </div>
+
+      <div class="quotes">
+
+        <div class="quote-card">
+          <div class="quote-mark">“</div>
+          <div class="quote-text" data-i18n="gratitude_quote_1"></div>
+          <div class="quote-author" data-i18n="gratitude_author_1"></div>
+        </div>
+
+        <div class="quote-card">
+          <div class="quote-mark">“</div>
+          <div class="quote-text" data-i18n="gratitude_quote_2"></div>
+          <div class="quote-author" data-i18n="gratitude_author_2"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-left">
+        <div data-i18n="footer_left_text_1"></div>
+        <div data-i18n="footer_left_text_2"></div>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-lang" data-i18n="footer_right_text"></div>
+          <span class="is-active">UA</span>
+          <span>EN</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+<script>
+
+</script>
+<!-- <script>
+function setLanguage(lang) {
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[lang] && translations[lang][key]) {
+      el.textContent = translations[lang][key];
+    }
+  });
+
+  // зберігаємо вибір
+  localStorage.setItem("lang", lang);
+
+  // оновлюємо активний стан кнопок
+  document.querySelectorAll(".header-lang button").forEach(btn => {
+    btn.classList.toggle("is-active", btn.dataset.lang === lang);
+  });
+}
+
+// ініціалізація
+const savedLang = localStorage.getItem("lang") || "ua";
+setLanguage(savedLang);
+
+// вішаємо обробники
+document.querySelectorAll(".header-lang button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    setLanguage(btn.dataset.lang);
+  });
+});
+</script> -->
+<script src="lang.js"></script>
+</body>
+</html>
