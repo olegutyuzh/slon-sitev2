@@ -29,17 +29,11 @@
       </nav>
 
     <div class="header-lang">
-      <button data-lang="ua" class="is-active" onclick="setLanguage('uk')">UA</button>
+      <button data-lang="uk" class="is-active" onclick="setLanguage('uk')">UA</button>
       <button data-lang="en" onclick="setLanguage('en')">EN</button>
     </div>
 
-
     </div>
-
-<!--     <div class="lang-switcher">
-        <button onclick="setLanguage('uk')">UA</button>
-        <button onclick="setLanguage('en')">EN</button>
-    </div>   -->  
   </header>
 
   <!-- ===== HERO ===== -->
@@ -83,8 +77,8 @@
       </div>
 
       <div class="about-block">
-        <div class="about-block-title" data-i18n="about_block_title"></div>
-        <div class="about-block-text" data-i18n="about_block_text"></div>
+        <div class="about-block-title" data-i18n="about_block_title_childhood"></div>
+        <div class="about-block-text" data-i18n="about_block_text_childhood"></div>
       </div>
 
       <div class="about-block">
@@ -278,46 +272,14 @@
 
       <div class="footer-right">
         <div class="footer-lang" data-i18n="footer_right_text"></div>
-          <span class="is-active">UA</span>
-          <span>EN</span>
+        <div class="footer-lang">
+          <span class="is-active" data-lang="uk">UA</span>
+          <span data-lang="en">EN</span>
         </div>
       </div>
 
     </div>
   </footer>
-
-<script>
-
-</script>
-<!-- <script>
-function setLanguage(lang) {
-  document.querySelectorAll("[data-i18n]").forEach(el => {
-    const key = el.getAttribute("data-i18n");
-    if (translations[lang] && translations[lang][key]) {
-      el.textContent = translations[lang][key];
-    }
-  });
-
-  // зберігаємо вибір
-  localStorage.setItem("lang", lang);
-
-  // оновлюємо активний стан кнопок
-  document.querySelectorAll(".header-lang button").forEach(btn => {
-    btn.classList.toggle("is-active", btn.dataset.lang === lang);
-  });
-}
-
-// ініціалізація
-const savedLang = localStorage.getItem("lang") || "ua";
-setLanguage(savedLang);
-
-// вішаємо обробники
-document.querySelectorAll(".header-lang button").forEach(btn => {
-  btn.addEventListener("click", () => {
-    setLanguage(btn.dataset.lang);
-  });
-});
-</script> -->
 <script src="lang.js"></script>
 </body>
 </html>
