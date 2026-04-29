@@ -922,6 +922,7 @@ body::after {
   color: #6f7180;
   font-weight: 400;
   font-size: 12px;
+  margin-left: 6px;
 }
 
 .contact-form input,
@@ -1028,4 +1029,32 @@ body::after {
   .form-actions .btn {
     width: 100%;
   }
+}
+
+/* honeypot для Netlify Forms — приховуємо від людей */
+.hidden-field {
+  position: absolute;
+  left: -9999px;
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* ===== ПОВІДОМЛЕННЯ ПРО ПОМИЛКУ ФОРМИ ===== */
+
+.form-error {
+  display: none;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(220, 80, 80, 0.4);
+  background: rgba(220, 80, 80, 0.08);
+  color: #ff9b9b;
+  font-size: 13px;
+}
+
+.form-error.is-visible {
+  display: block;
+  animation: fadeIn 0.3s ease;
 }

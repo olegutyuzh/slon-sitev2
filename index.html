@@ -265,22 +265,21 @@
   <section class="section memory-actions">
     <div class="memory-inner">
 
-      <h2 class="memory-title">Вшанувати пам’ять</h2>
+      <h2 class="memory-title" data-i18n="memory_title"></h2>
 
-      <p class="memory-subtitle">
-        Якщо ви знали Ігоря або хочете залишити слова — зробіть це тут.
-      </p>
+      <p class="memory-subtitle" data-i18n="memory_subtitle"></p>
 
       <div class="memory-buttons">
 
         <button id="lightCandleBtn" class="memory-btn">
           <span class="memory-btn-icon">🕯️</span>
-          Запалити свічку
+          <span data-i18n="light_candle"></span>
         </button>
 
         <a href="contact.html" class="memory-btn">
           <span class="memory-btn-icon">💬</span>
-          Залишити слова
+          <span data-i18n="leave_message"></span>
+        </a>
         </a>
       </div>
 
@@ -325,7 +324,7 @@
 
         </svg>
 
-        <p class="candle-text">Свічку запалено</p>
+        <p class="candle-text" data-i18n="candle_text"></p>
 
       </div>
 
@@ -352,6 +351,7 @@
     </div>
   </footer>
   <script src="lang.js"></script>
+  <script src="candle.js"></script>
 <!--   <script>
     const btn = document.getElementById("lightCandleBtn");
     const candle = document.getElementById("candleContainer");
@@ -362,18 +362,18 @@
     });
   </script> -->
   <script>
-  const btn = document.getElementById("lightCandleBtn");
-  const candle = document.getElementById("candleContainer");
+/*     const btn = document.getElementById("lightCandleBtn");
+    const candle = document.getElementById("candleContainer");
 
-  if (btn && candle) {
-    btn.addEventListener("click", () => {
-      btn.style.opacity = "0.5";
-      candle.classList.add("is-visible");
+    if (btn && candle) {
+      btn.addEventListener("click", () => {
+        btn.style.opacity = "0.5";
+        candle.classList.add("is-visible");
 
-      // плавний скрол до свічки
-      candle.scrollIntoView({ behavior: "smooth", block: "center" });
-    });
-  }
+        // плавний скрол до свічки
+        candle.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+    } */
   </script>  
 </body>
 </html>

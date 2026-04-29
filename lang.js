@@ -30,12 +30,47 @@ function updateActiveButtons() {
 function applyTranslations() {
     const render = (data) => {
         const dict = data[currentLang] || data[DEFAULT_LANG] || {};
+
+        // Текстовий вміст: <h1 data-i18n="key">...</h1>
         document.querySelectorAll("[data-i18n]").forEach(el => {
             const key = el.getAttribute("data-i18n");
             if (dict[key] !== undefined) {
                 el.textContent = dict[key];
             }
         });
+
+        // Placeholder для input/textarea: data-i18n-placeholder="key"
+        document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+            const key = el.getAttribute("data-i18n-placeholder");
+            if (dict[key] !== undefined) {
+                el.setAttribute("placeholder", dict[key]);
+            }
+        });
+
+        // Title (тултипи): data-i18n-title="key"
+        document.querySelectorAll("[data-i18n-title]").forEach(el => {
+            const key = el.getAttribute("data-i18n-title");
+            if (dict[key] !== undefined) {
+                el.setAttribute("title", dict[key]);
+            }
+        });
+
+        // Alt для зображень: data-i18n-alt="key"
+        document.querySelectorAll("[data-i18n-alt]").forEach(el => {
+            const key = el.getAttribute("data-i18n-alt");
+            if (dict[key] !== undefined) {
+                el.setAttribute("alt", dict[key]);
+            }
+        });
+
+        // Aria-label: data-i18n-aria-label="key"
+        document.querySelectorAll("[data-i18n-aria-label]").forEach(el => {
+            const key = el.getAttribute("data-i18n-aria-label");
+            if (dict[key] !== undefined) {
+                el.setAttribute("aria-label", dict[key]);
+            }
+        });
+
         // Оновлюємо <html lang="...">
         document.documentElement.setAttribute("lang", currentLang);
     };
@@ -52,6 +87,7 @@ function applyTranslations() {
         })
         .then(data => {
             translationsCache = data;
+            window.translationsCache = data; // експорт для інших скриптів (напр. contact.html)
             render(data);
         })
         .catch(err => console.error("[i18n]", err));

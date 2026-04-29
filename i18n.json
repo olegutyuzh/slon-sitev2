@@ -89,7 +89,37 @@
     "footer_left_text_1": "Сайт-пам'ять про Ігоря «Слона» Утюжа.",
     "footer_left_text_2": "Створено родиною та друзями. 2024 — 2026.",
 
-    "footer_right_text": "Мова"
+    "footer_right_text": "Мова",
+
+    "contact_success_title": "Дякуємо за ваші слова пам'яті",
+    "contact_success_text": "Ваші слова дуже важливі для нас. Вони  допомагають зберегти пам'ять про Ігоря та підтримують його родину і побратимів. Ми обов'язково опублікуємо ваше повідомлення на сайті. Ще раз дякуємо за вашу підтримку і пам'ять." ,
+    "back_to_home": "Повернутися на головну",
+
+    "memory_title": "Вшанувати пам’ять",
+    "memory_subtitle": "Якщо ви знали Ігоря або хочете залишити слова — зробіть це тут.",
+
+    "light_candle": "Запалити свічку",
+    "leave_message": "Залишити слова",
+    "candle_text": "Свічку запалено",
+
+    "contact_back": "← Повернутись на головну",
+    "contact_kicker": "Слова пам'яті",
+    "contact_title": "Залишити слова",
+    "contact_subtitle": "Поділіться спогадом, історією або просто словами підтримки. Ваші слова стануть частиною пам'яті про Ігоря.",
+    "contact_name_label": "Ваше ім'я",
+    "contact_name_placeholder": "Як до вас звертатись",
+    "contact_relation_label": "Як ви знали Ігоря",
+    "contact_relation_placeholder": "Друг, побратим, родич, колега...",
+    "contact_email_label": "Email",
+    "contact_email_placeholder": "email@example.com",
+    "contact_message_label": "Ваші слова",
+    "contact_message_placeholder": "Спогад, історія, слова підтримки...",
+    "contact_optional": "(не обов'язково)",
+    "contact_submit": "Надіслати",
+    "contact_cancel": "Скасувати",
+    "contact_sending": "Надсилаємо...",
+    "contact_error": "Не вдалося надіслати повідомлення. Перевірте з'єднання та спробуйте ще раз.",
+    "contact_success": "Ваше повідомлення успішно надіслано. Дякуємо за вашу пам'ять і підтримку."
   },
 
   "en": {
@@ -182,6 +212,36 @@
     "footer_left_text_1": "A memorial site for Ihor «Slon» Utyuzh.",
     "footer_left_text_2": "Created by family and friends. 2024 — 2026.",
 
-    "footer_right_text": "Language"
+    "footer_right_text": "Language",
+
+    "contact_success_title": "Thank you for your words of memory",
+    "contact_success_text": "Your words are very important to us. They help preserve the memory of Ihor and support his family and comrades. We will definitely publish your message on the site. Thank you again for your support and memory." ,
+    "back_to_home": "Back to home",
+
+    "memory_title": "Honor the memory",
+    "memory_subtitle": "If you knew Ihor or want to leave words — do it here.",
+
+    "light_candle": "Light a candle",
+    "leave_message": "Leave words",
+    "candle_text": "The candle is lit",
+
+    "contact_back": "← Back to home",
+    "contact_kicker": "Words of memory",
+    "contact_title": "Leave Words",
+    "contact_subtitle": "Share a memory, story, or simply words of support. Your words will become part of the legacy of Ihor.",
+    "contact_name_label": "Your name",
+    "contact_name_placeholder": "How should we address you",
+    "contact_relation_label": "How you knew Ihor",
+    "contact_relation_placeholder": "Friend, brother-in-arms, relative, colleague...",
+    "contact_email_label": "Email",
+    "contact_email_placeholder": "email@example.com",
+    "contact_message_label": "Your words",
+    "contact_message_placeholder": "Memory, story, words of support...",
+    "contact_optional": "(optional)",
+    "contact_submit": "Send",
+    "contact_cancel": "Cancel",
+    "contact_sending": "Sending...",
+    "contact_error": "Failed to send the message. Please check your connection and try again.",
+    "contact_success": "Your message has been successfully sent. Thank you for your memory and support."
   }
 }
