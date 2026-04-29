@@ -7,6 +7,9 @@
     "btn_warpath": "Його шлях",
     "btn_life": "Фрагменти життя",
 
+    "hero_action_warpath": "Дізнатися про його шлях воїна",
+    "hero_action_life": "Побачити моменти з його життя",
+
     "about_title": "Хто він був для нас",
     "about_subtitle": "Коротка історія життя, характеру та шляху.",
     "menu_about": "Про Ігоря",
@@ -95,6 +98,9 @@
     "hero_text": "Ihor joined the frontline as a volunteer during the first months of the full‑scale invasion. He was the one who always stepped forward — for his friends, for his family, for Ukraine.",
     "btn_warpath": "His War Path",
     "btn_life": "Life Moments",
+
+    "hero_action_warpath": "Learn about his war path",
+    "hero_action_life": "See moments from his life",
 
     "about_title": "Who He Was",
     "about_subtitle": "A brief story of his life, character, and path.",
