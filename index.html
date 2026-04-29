@@ -261,6 +261,77 @@
     </div>
   </section>
 
+  <!-- ===== MEMORY ACTIONS ===== -->
+  <section class="section memory-actions">
+    <div class="memory-inner">
+
+      <h2 class="memory-title">Вшанувати пам’ять</h2>
+
+      <p class="memory-subtitle">
+        Якщо ви знали Ігоря або хочете залишити слова — зробіть це тут.
+      </p>
+
+      <div class="memory-buttons">
+
+        <button id="lightCandleBtn" class="memory-btn">
+          <span class="memory-btn-icon">🕯️</span>
+          Запалити свічку
+        </button>
+
+        <a href="contact.html" class="memory-btn">
+          <span class="memory-btn-icon">💬</span>
+          Залишити слова
+        </a>
+      </div>
+
+      <!-- ===== CANDLE ===== -->
+      <div id="candleContainer" class="candle-visual">
+
+        <!-- SVG СВІЧКА -->
+        <svg width="80" height="160" viewBox="0 0 80 160">
+
+          <defs>
+            <radialGradient id="glow" cx="50%" cy="30%" r="50%">
+              <stop offset="0%" stop-color="rgba(255,200,120,0.6)" />
+              <stop offset="100%" stop-color="rgba(255,200,120,0)" />
+            </radialGradient>
+
+            <linearGradient id="wax" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#f5f5f5"/>
+              <stop offset="100%" stop-color="#d4d4d4"/>
+            </linearGradient>
+          </defs>
+
+          <circle cx="40" cy="40" r="30" fill="url(#glow)">
+            <animate attributeName="r" values="28;32;28" dur="3s" repeatCount="indefinite"/>
+          </circle>
+
+          <path d="M40 20 C45 30, 50 40, 40 50 C30 40, 35 30, 40 20 Z"
+            fill="#FFD580">
+            <animate attributeName="d"
+              dur="1.6s"
+              repeatCount="indefinite"
+              values="
+              M40 20 C45 30, 50 40, 40 50 C30 40, 35 30, 40 20 Z;
+              M40 22 C46 32, 48 42, 40 50 C32 42, 34 32, 40 22 Z;
+              M40 20 C44 30, 52 40, 40 50 C28 40, 36 30, 40 20 Z;
+              M40 20 C45 30, 50 40, 40 50 C30 40, 35 30, 40 20 Z
+            "/>
+          </path>
+
+          <rect x="39" y="48" width="2" height="6" fill="#444" />
+          <rect x="25" y="54" width="30" height="80" rx="6" fill="url(#wax)" />
+          <ellipse cx="40" cy="140" rx="20" ry="6" fill="rgba(0,0,0,0.3)" />
+
+        </svg>
+
+        <p class="candle-text">Свічку запалено</p>
+
+      </div>
+
+    </div>
+  </section>
+  
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="footer-inner">
@@ -280,6 +351,29 @@
 
     </div>
   </footer>
-<script src="lang.js"></script>
+  <script src="lang.js"></script>
+<!--   <script>
+    const btn = document.getElementById("lightCandleBtn");
+    const candle = document.getElementById("candleContainer");
+
+    btn.addEventListener("click", () => {
+      btn.style.opacity = "0.4";
+      candle.classList.add("is-visible");
+    });
+  </script> -->
+  <script>
+  const btn = document.getElementById("lightCandleBtn");
+  const candle = document.getElementById("candleContainer");
+
+  if (btn && candle) {
+    btn.addEventListener("click", () => {
+      btn.style.opacity = "0.5";
+      candle.classList.add("is-visible");
+
+      // плавний скрол до свічки
+      candle.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+  }
+  </script>  
 </body>
 </html>

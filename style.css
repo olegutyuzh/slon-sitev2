@@ -733,3 +733,299 @@ a {
     align-items: flex-start;
   }
 }
+
+/* ===== CANDLE ===== */
+
+.candle {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 140px;
+}
+
+.candle-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.candle-action {
+  margin-top: 24px;
+}
+
+.candle-btn {
+  border: 1px solid rgba(230,230,230,0.2);
+  background: transparent;
+  color: #E6E6E6;
+  padding: 12px 28px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+.candle-btn:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+.candle-visual {
+  margin-top: 60px;
+  opacity: 0;
+  transition: opacity 1.6s ease;
+}
+
+.candle-visual.is-visible {
+  opacity: 1;
+}
+
+.candle-text {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #B3B3B3;
+}
+
+/* subtle glow */
+
+.candle-visual svg {
+  filter: drop-shadow(0 0 20px rgba(255,200,120,0.15));
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 20%,
+    rgba(255,200,120,0.04),
+    transparent
+  );
+  pointer-events: none;
+}
+
+/* ===== MEMORY ACTIONS ===== */
+
+.memory-actions {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.memory-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.memory-title {
+  font-size: 28px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 12px;
+}
+
+.memory-subtitle {
+  font-size: 14px;
+  color: #B3B3B3;
+  margin-bottom: 40px;
+}
+
+.memory-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.memory-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: 999px;
+
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  color: #E6E6E6;
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition: all 0.4s ease;
+}
+
+.memory-btn:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-1px);
+}
+
+.memory-btn-icon {
+  font-size: 16px;
+  opacity: 0.9;
+}
+/* ===== CONTACT PAGE ===== */
+
+.contact-page {
+  padding-top: 140px;
+  padding-bottom: 120px;
+  background:
+    radial-gradient(circle at top left, #1b1c24 0, #050608 55%),
+    radial-gradient(circle at bottom right, #101118 0, #050608 60%);
+  min-height: calc(100vh - 80px);
+}
+
+.contact-inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.contact-back {
+  display: inline-block;
+  font-size: 13px;
+  color: #B3B3B3;
+  margin-bottom: 24px;
+  transition: color 0.2s ease;
+}
+
+.contact-back:hover {
+  color: #C8A45A;
+}
+
+.contact-header {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.contact-title {
+  font-size: clamp(32px, 4vw, 44px);
+  color: #C8A45A;
+  margin-bottom: 12px;
+}
+
+/* ===== ФОРМА ===== */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-row label {
+  font-size: 13px;
+  color: #E6E6E6;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.form-optional {
+  color: #6f7180;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(230, 230, 230, 0.1);
+  border-radius: 12px;
+  padding: 12px 16px;
+  color: #E6E6E6;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: border-color 0.2s ease, background 0.2s ease;
+  width: 100%;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #6f7180;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: rgba(200, 164, 90, 0.6);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 140px;
+  font-family: inherit;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.form-actions .btn {
+  padding: 12px 28px;
+}
+
+/* ===== ПОВІДОМЛЕННЯ ПРО УСПІХ ===== */
+
+.contact-success {
+  display: none;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(200, 164, 90, 0.2);
+  background: rgba(200, 164, 90, 0.04);
+}
+
+.contact-success.is-visible {
+  display: block;
+  animation: fadeIn 0.6s ease;
+}
+
+.contact-success-icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.contact-success-title {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  color: #C8A45A;
+  margin: 0 0 8px;
+}
+
+.contact-success-text {
+  font-size: 14px;
+  color: #B3B3B3;
+  margin-bottom: 24px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== АДАПТИВ для contact ===== */
+
+@media (max-width: 720px) {
+  .contact-page {
+    padding-top: 110px;
+    padding-bottom: 80px;
+    padding-inline: 18px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions .btn {
+    width: 100%;
+  }
+}

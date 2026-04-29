@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Залишити слова — Ігор «Слон» Утюж</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page">
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header-inner">
+
+      <a href="index.html" class="header-logo">
+        <div class="header-logo-mark">
+          <img src="img/symbol-slon.png" alt="Символ Слон" class="logo-elephant" />
+        </div>
+        SLON
+      </a>
+
+      <nav class="header-nav">
+        <a href="index.html#about">Про Ігоря</a>
+        <a href="index.html#war-path">Шлях воїна</a>
+        <a href="index.html#life">Фрагменти життя</a>
+        <a href="index.html#symbols">Символіка</a>
+        <a href="index.html#gratitude">Подяка</a>
+      </nav>
+
+      <div class="header-lang">
+        <button data-lang="uk" class="is-active">UA</button>
+        <button data-lang="en">EN</button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-page">
+    <div class="contact-inner">
+
+      <a href="index.html" class="contact-back">← Повернутись на головну</a>
+
+      <div class="section-header contact-header">
+        <div class="section-kicker">Слова пам'яті</div>
+        <h2 class="section-title contact-title">Залишити слова</h2>
+        <p class="section-subtitle">
+          Поділіться спогадом, історією або просто словами підтримки.
+          Ваші слова стануть частиною пам'яті про Ігоря.
+        </p>
+      </div>
+
+      <form
+        class="contact-form"
+        id="contactForm"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+      >
+
+        <!-- honeypot для захисту від ботів -->
+        <p class="hidden-field">
+          <label>Не заповнюйте це поле: <input name="bot-field" /></label>
+        </p>
+
+        <!-- потрібно для AJAX submit -->
+        <input type="hidden" name="form-name" value="contact" />
+
+        <div class="form-row">
+          <label for="name">Ваше ім'я</label>
+          <input type="text" id="name" name="name" placeholder="Як до вас звертатись" required />
+        </div>
+
+        <div class="form-row">
+          <label for="relation">Як ви знали Ігоря <span class="form-optional">(не обов'язково)</span></label>
+          <input type="text" id="relation" name="relation" placeholder="Друг, побратим, родич, колега..." />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email <span class="form-optional">(не обов'язково)</span></label>
+          <input type="email" id="email" name="email" placeholder="email@example.com" />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Ваші слова</label>
+          <textarea id="message" name="message" rows="7" placeholder="Спогад, історія, слова підтримки..." required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Надіслати</button>
+          <a href="index.html" class="btn btn-ghost">Скасувати</a>
+        </div>
+
+      </form>
+
+      <!-- повідомлення після відправки -->
+      <div id="contactSuccess" class="contact-success">
+        <div class="contact-success-icon">🕯️</div>
+        <h3 class="contact-success-title">Дякуємо</h3>
+        <p class="contact-success-text">
+          Ваші слова збережено. Вони стануть частиною пам'яті про Ігоря.
+        </p>
+        <a href="index.html" class="btn btn-ghost">Повернутись на головну</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-left">
+        <div>© Пам'яті Ігоря «Слона» Утюжа</div>
+        <div>Сайт створено з вдячністю</div>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-lang">Мова:</div>
+        <div class="footer-lang">
+          <span class="is-active" data-lang="uk">UA</span>
+          <span data-lang="en">EN</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById("contactForm");
+    const success = document.getElementById("contactSuccess");
+
+    if (form) {
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Надсилаємо...";
+
+        const formData = new FormData(form);
+
+        try {
+          const response = await fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString()
+          });
+
+          if (response.ok) {
+            form.style.display = "none";
+            success.classList.add("is-visible");
+            success.scrollIntoView({ behavior: "smooth", block: "center" });
+          } else {
+            alert("Не вдалося надіслати. Спробуйте ще раз.");
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText;
+          }
+        } catch (err) {
+          alert("Помилка з'єднання. Перевірте інтернет і спробуйте ще раз.");
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
