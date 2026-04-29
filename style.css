@@ -1058,3 +1058,8 @@ body::after {
   display: block;
   animation: fadeIn 0.3s ease;
 }
+
+.war-photo-card.is-portrait img {
+  height: 310px;
+  object-position: center 10%;
+}

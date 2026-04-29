@@ -1,0 +1,9 @@
+<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20 80 
+           Q40 20 100 20 
+           Q160 20 180 80 
+           Q150 100 120 90 
+           Q100 110 80 90 
+           Q50 100 20 80 Z" fill="white" opacity="0.6"></path>
+  <path d="M150 80 Q170 100 160 110" stroke="white" stroke-width="2" fill="none"></path>
+</svg>

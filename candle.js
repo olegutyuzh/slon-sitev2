@@ -10,3 +10,7 @@
         candle.scrollIntoView({ behavior: "smooth", block: "center" });
       });
     }
+
+    function lightCandle() {
+      document.querySelector('.scene').classList.add('lit');
+    }

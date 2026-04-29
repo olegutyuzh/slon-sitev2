@@ -135,7 +135,7 @@
           <div class="war-photo-caption" data-i18n="war_photo_caption_1"></div>
         </div>
 
-        <div class="war-photo-card">
+        <div class="war-photo-card is-portrait">
           <img src="img/war2.jpg" alt="" />
           <div class="war-photo-caption" data-i18n="war_photo_caption_2"></div>
         </div>
@@ -330,7 +330,7 @@
 
     </div>
   </section>
-  
+
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="footer-inner">
@@ -375,5 +375,14 @@
       });
     } */
   </script>  
+
+  <script>
+    function lightCandle() {
+      document.querySelector('.candle-scene').classList.add('scene-lit');
+
+      // показати flame
+      document.querySelector('.flame').style.opacity = 1;
+    }
+  </script>
 </body>
 </html>
