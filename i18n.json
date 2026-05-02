@@ -9,6 +9,7 @@
 
     "hero_action_warpath": "Його шлях",
     "hero_action_life": "Фрагменти життя",
+    "hero_photo_mark": "СЛОН",
 
     "menu_about": "Про Ігоря",
     "menu_warpath": "Шлях воїна",
@@ -80,11 +81,17 @@
     "section_kicker_gratitude": "Подяка",
     "section_title_gratitude": "Слова, які залишились",
 
-    "gratitude_quote_1": "[ПОТРЕБУЄ ВЛАСНОГО ТЕКСТУ ВІД РОДИНИ АБО ПОБРАТИМА. Зразок: коротка цитата 1–3 речення про те, яким Ігор був як людина — у бою, на позиції, у щоденному житті. Конкретний епізод працює сильніше, ніж загальні слова.]",
-    "gratitude_author_1": "— Побратим, 78-й ОДШП",
+    "gratitude_quote_1": "Він був для нас Всесвітом. Справжній патріот, вірний друг і побратим, з великим серцем, відкритим для всіх. У будь-яких обставинах підбадьорював інших і повторював, що все буде добре. Так було і на Майдані, коли йому було 17. Так було і потім.",
+    "gratitude_author_1": "— Мама",
 
-    "gratitude_quote_2": "[ПОТРЕБУЄ ВЛАСНОГО ТЕКСТУ ВІД РОДИНИ. Зразок: спогад чи фраза самого Ігоря, яку він часто казав, або те, що мама/батько/сестра пам'ятають про нього найбільше. Особисте, не пафосне.]",
-    "gratitude_author_2": "— Мама",
+    "gratitude_quote_2": "Головним його бажанням була наша перемога. Після неї планував багато подорожувати — підлаштовуючи маршрути так, щоб встигати на футбольні матчі. Мріяв про будиночок у горах із неймовірними краєвидами і про доньку — обов'язково першу. У нього була мета створити благодійний фонд, який він би назвав «Білий Слон».",
+    "gratitude_author_2": "— Наречена",
+
+    "gratitude_quote_3": "«Слон» завжди хотів бути попереду. Командир кликав його у штаб — він відмовлявся: «Я хочу заходити в міста і ставити прапори». Так і робив.",
+    "gratitude_author_3": "— Побратим, 78-й десантно-штурмовий полк",  
+
+    "gratitude_quote_4": "Людина, яка точно знала свої цінності й трималася їх. Кремезний, з широкими плечима, за які можна було сховатися. «Своя людина» з перших слів — і назавжди.",
+    "gratitude_author_4": "— Друг",
 
     "footer_left_text_1": "Сайт-пам'ять про Ігоря «Слона» Утюжа.",
     "footer_left_text_2": "Створено родиною та друзями. 2024 — 2026.",
@@ -132,6 +139,7 @@
 
     "hero_action_warpath": "His path",
     "hero_action_life": "Life moments",
+    "hero_photo_mark": "SLON",
 
     "menu_about": "About",
     "menu_warpath": "War path",
@@ -203,11 +211,17 @@
     "section_kicker_gratitude": "Tributes",
     "section_title_gratitude": "Words that remain",
 
-    "gratitude_quote_1": "[NEEDS REAL TEXT FROM FAMILY OR COMRADE. Suggested format: a short 1–3 sentence quote about who Ihor was as a person — in battle, on position, in everyday life. A specific moment works stronger than general praise.]",
-    "gratitude_author_1": "— Comrade, 78th Air Assault Regiment",
+    "gratitude_quote_1": "He was our entire universe. A true patriot, a loyal friend and brother-in-arms, with a big heart open to everyone. No matter the circumstances, he kept lifting others up, repeating that everything would be alright. That's how it was on the Maidan, when he was 17. And that's how it stayed.",
+    "gratitude_author_1": "— Mother",
 
-    "gratitude_quote_2": "[NEEDS REAL TEXT FROM FAMILY. Suggested format: a memory or one of Ihor's own phrases that he often said, or what his mother/father/sister remembers most. Personal, not pathos-driven.]",
-    "gratitude_author_2": "— Mother",
+    "gratitude_quote_2": "His one wish was our victory. After that, he planned to travel — endlessly, always timing the trips around football matches. He dreamed of a little house in the mountains with breathtaking views, and of a daughter — the first child had to be a girl. And he wanted to start a charitable foundation. He'd already chosen the name: «The White Elephant.»",
+    "gratitude_author_2": "— Fiancée",
+
+    "gratitude_quote_3": "«Slon» always wanted to be at the front. The commander kept asking him to come to headquarters — he refused: «I want to walk into cities and plant flags.» And that's exactly what he did.",
+    "gratitude_author_3": "— Brother-in-arms, 78th Air Assault Regiment",    
+
+    "gratitude_quote_4": "A man who knew exactly what he stood for, and stood by it. Broad-shouldered, the kind of person you could hide behind. He became «one of us» within the first few words — and stayed that way for good.",
+    "gratitude_author_4": "— Friend",
 
     "footer_left_text_1": "A memorial site for Ihor «Slon» Utyuzh.",
     "footer_left_text_2": "Created by family and friends. 2024 — 2026.",

@@ -142,10 +142,14 @@ a {
 }
 
 .header-lang button.is-active {
-  background: rgba(200, 164, 90, 0.16);
-  color: #E6E6E6;
+  background: rgba(200, 164, 90, 0.18);
+  color: #C8A45A;
+  border: 1px solid rgba(200, 164, 90, 0.4);
 }
 
+.header-lang button {
+  border: 1px solid transparent; /* щоб не «стрибало» при появі рамки */
+}
 /* ===== HERO ===== */
 
 .hero {
@@ -589,40 +593,66 @@ a {
 }
 
 .gratitude-inner {
-  max-width: 900px;
+  max-width: 760px;
   margin: 0 auto;
 }
 
 .quotes {
   display: grid;
-  gap: 16px;
+  gap: 40px;
+  margin-top: 8px;
 }
 
 .quote-card {
-  border-radius: 14px;
-  border: 1px solid rgba(230, 230, 230, 0.08);
-  background: #0B0C10;
-  padding: 16px 18px 14px;
   position: relative;
+  padding: 28px 28px 24px 36px;
+  border: none;
+  border-left: 2px solid rgba(200, 164, 90, 0.25);
+  background: transparent;
+  border-radius: 0;
 }
 
 .quote-mark {
   position: absolute;
-  top: 10px;
-  right: 14px;
-  font-size: 20px;
-  color: rgba(200, 164, 90, 0.5);
+  top: -18px;
+  left: 18px;
+  font-family: "Playfair Display", serif;
+  font-size: 110px;
+  line-height: 1;
+  color: rgba(200, 164, 90, 0.12);
+  pointer-events: none;
+  user-select: none;
 }
 
 .quote-text {
+  position: relative;
   font-size: 14px;
+  line-height: 1.75;
   color: #E6E6E6;
-  margin-bottom: 8px;
+  margin-bottom: 18px;
 }
 
 .quote-author {
-  font-size: 12px;
-  color: #B3B3B3;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #C8A45A;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .quote-card {
+    padding: 22px 20px 20px 26px;
+  }
+  .quote-mark {
+    font-size: 80px;
+    top: -12px;
+    left: 12px;
+  }
+  .quote-text {
+    font-size: 15px;
+    line-height: 1.7;
+  }
 }
 
 /* ===== ФУТЕР ===== */
@@ -874,6 +904,13 @@ body::after {
   font-size: 16px;
   opacity: 0.9;
 }
+
+.memory-btn-icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
 /* ===== CONTACT PAGE ===== */
 
 .contact-page {

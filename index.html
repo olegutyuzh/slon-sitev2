@@ -53,8 +53,8 @@
       </nav>
 
     <div class="header-lang">
-      <button data-lang="uk" class="is-active" onclick="setLanguage('uk')">UA</button>
-      <button data-lang="en" onclick="setLanguage('en')">EN</button>
+      <button type="button" data-lang="uk" class="is-active">UA</button>
+      <button type="button" data-lang="en">EN</button>
     </div>
 
     </div>
@@ -69,7 +69,7 @@
           <img src="img/hero-portrait.jpg" alt="Ігор Утюж" />
         </div>
         <div class="hero-photo-overlay"></div>
-        <div class="hero-photo-mark">СЛОН</div>
+        <div class="hero-photo-mark" data-i18n="hero_photo_mark"></div>
       </div>
 
       <div class="hero-content">
@@ -280,6 +280,7 @@
         <div class="quote-card">
           <div class="quote-mark">“</div>
           <div class="quote-text" data-i18n="gratitude_quote_1"></div>
+          <div class="quote-mark">“</div>
           <div class="quote-author" data-i18n="gratitude_author_1"></div>
         </div>
 
@@ -289,7 +290,19 @@
           <div class="quote-author" data-i18n="gratitude_author_2"></div>
         </div>
 
+        <div class="quote-card">
+          <div class="quote-mark">“</div>
+          <div class="quote-text" data-i18n="gratitude_quote_3"></div>
+          <div class="quote-author" data-i18n="gratitude_author_3"></div>
+        </div>
       </div>
+
+        <div class="quote-card">
+          <div class="quote-mark">“</div>
+          <div class="quote-text" data-i18n="gratitude_quote_4"></div>
+          <div class="quote-author" data-i18n="gratitude_author_4"></div>
+        </div>
+      </div>      
 
     </div>
   </section>
@@ -308,12 +321,22 @@
       <div class="memory-buttons">
 
         <button id="lightCandleBtn" class="memory-btn">
-          <span class="memory-btn-icon">🕯️</span>
+          <span class="memory-btn-icon">
+            <!-- 🕯️ -->
+            <div class="symbol-icon">
+              <img src="img/candle.svg" alt="Slon Graphic" class="slon-svg">
+            </div>
+          </span>
           <span data-i18n="light_candle"></span>
         </button>
 
         <a href="contact.html" class="memory-btn">
-          <span class="memory-btn-icon">💬</span>
+          <span class="memory-btn-icon">
+            <!-- 💬 -->
+            <div class="symbol-icon">
+              <img src="img/message.svg" alt="Slon Graphic" class="slon-svg">
+            </div>
+          </span>
           <span data-i18n="leave_message"></span>
         </a>
         </a>
@@ -420,27 +443,6 @@
       document.querySelector('.flame').style.opacity = 1;
     }
   </script> -->
-
-  <script>
-/*   const btn = document.getElementById("lightCandleBtn");
-  const candle = document.getElementById("candleContainer");
-
-  if (btn && candle) {
-    btn.addEventListener("click", () => {
-
-      // показати свічку
-      candle.classList.add("is-visible");
-
-      // активувати слона
-      candle.classList.add("is-lit");
-
-      // ефект натиснутої кнопки
-      btn.style.opacity = "0.5";
-
-      // плавний скрол
-      candle.scrollIntoView({ behavior: "smooth", block: "center" });
-    });
-  } */
-  </script>  
+ 
 </body>
 </html>
