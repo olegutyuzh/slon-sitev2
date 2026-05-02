@@ -545,14 +545,30 @@ a {
 .symbol-icon {
   width: 32px;
   height: 32px;
+
   border-radius: 999px;
   border: 1px solid rgba(200, 164, 90, 0.7);
+
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+
   color: #C8A45A;
   margin-bottom: 10px;
+
+  /* 🔥 glow */
+  filter: drop-shadow(0 0 6px rgba(200, 164, 90, 0.35));
+  transition: all 0.3s ease;
+}
+
+.symbol-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.symbol-card:hover .symbol-icon {
+  filter: drop-shadow(0 0 10px rgba(200, 164, 90, 0.6));
+  transform: scale(1.08);
 }
 
 .symbol-title {
@@ -1062,4 +1078,141 @@ body::after {
 .war-photo-card.is-portrait img {
   height: 310px;
   object-position: center 10%;
+}
+
+/* ===== ELEPHANT BACKGROUND (MEMORY EFFECT) ===== */
+
+.candle-scene {
+  position: relative;
+  overflow: hidden;
+}
+
+/* сам слон */
+.elephant-bg {
+  position: absolute;
+  inset: 0; /* ← тепер займає ВЕСЬ блок */
+
+  background-image: url('img/elephant-dark.jpg');
+  background-size: cover;
+  background-position: center 20%;
+
+  opacity: 0;
+  transform: scale(1.02);
+
+  filter: brightness(0.75) contrast(1.1) blur(1.2px);
+
+  transition: all 1.8s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* затемнення країв (ВАЖЛИВО) */
+.elephant-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(circle at 50% 60%,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0.25) 40%,
+    rgba(0,0,0,0.6) 70%,
+    rgba(0,0,0,0.9) 100%
+  );
+}
+
+/* стан після кліку */
+
+.elephant-bg {
+  z-index: 0;
+}
+
+.candle-visual svg {
+  position: relative;
+  z-index: 2;
+}
+
+.candle-text {
+  position: relative;
+  z-index: 2;
+}
+
+.memory-scene {
+  position: relative;
+  overflow: hidden;
+}
+
+.memory-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.memory-scene.is-lit .elephant-bg {
+  opacity: 0.32;
+}
+
+.memory-scene::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(5,6,8,1) 0%,
+    rgba(5,6,8,0.6) 30%,
+    rgba(5,6,8,0) 60%
+  );
+
+  pointer-events: none;
+  z-index: 1;
+}
+
+.memory-scene::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+
+  width: 420px;   /* було ~280 */
+  height: 420px;
+
+  background: radial-gradient(circle,
+    rgba(255,200,120,0.35) 0%,   /* сильніше */
+    rgba(255,200,120,0.18) 30%,
+    rgba(255,200,120,0.08) 55%,
+    rgba(255,200,120,0.02) 75%,
+    transparent 85%
+  );
+
+  opacity: 0;
+  transition: opacity 1s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.memory-scene.is-lit::before {
+  opacity: 1;
+}
+
+body {
+  background-image: url('/img/elephant-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #000; /* запасний колір, поки фото вантажиться */
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* затемнення 55% */
+  z-index: -1;
+  pointer-events: none;
+}
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+    background-position: center center;
+  }
 }

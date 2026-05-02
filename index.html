@@ -5,6 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ігор “Слон” Утюж</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Базові SEO -->
+  <title>Ігор «Слон» Утюж — In Memoriam</title>
+  <link rel="canonical" href="https://slon-site.netlify.app/" />
+
+  <!-- Open Graph (Facebook, Telegram, Viber, LinkedIn) -->
+  <meta name="description" content="Меморіальна сторінка, присвячена Ігорю «Слону» Утюжу — захиснику України. 18.04.1996 — 07.12.2023." />
+  <meta property="og:title" content="Світла пам’ять Ігоря Утюжа — його сила та доброта живуть далі">
+  <meta property="og:description" content="Вшанування життя, сили та спадку Ігоря Утюжа. Його цінності, мужність і пам’ять продовжують надихати всіх, хто його знав.">
+  <meta property="og:image" content="https://slon.life/img/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://slon.life/" />
+  <meta property="og:locale" content="uk_UA" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Ігор «Слон» Утюж — In Memoriam" />
+  <meta name="twitter:description" content="Пам'яті Ігоря Утюжа — захисника України. 18.04.1996 — 07.12.2023." />
+  <meta name="twitter:image"       content="https://slon.life/img/og-cover.png" />  
+
+  <!-- Optional CTA -->
+  <meta property="og:see_also" content="https://slon.life/thanks.html">   
 </head>
 
 <body class="page">
@@ -211,19 +235,28 @@
       <div class="symbols-grid">
 
         <div class="symbol-card">
-          <div class="symbol-icon">🐘</div>
+          <!-- <div class="symbol-icon">🐘</div> -->
+          <div class="symbol-icon">
+            <img src="img/elephant.svg" alt="Slon Graphic" class="slon-svg">  
+          </div>     
           <div class="symbol-title" data-i18n="symbol_title_slon"></div>
           <div class="symbol-text" data-i18n="symbol_text_slon"></div>
         </div>
 
         <div class="symbol-card">
-          <div class="symbol-icon">🛡️</div>
+          <!-- <div class="symbol-icon">🛡️</div> -->
+          <div class="symbol-icon">
+            <img src="img/shield.svg" alt="Slon Graphic" class="slon-svg">  
+          </div>
           <div class="symbol-title" data-i18n="symbol_title_shield"></div>
           <div class="symbol-text" data-i18n="symbol_text_shield"></div>
         </div>
 
         <div class="symbol-card">
-          <div class="symbol-icon">🇺🇦</div>
+          <!-- <div class="symbol-icon">🇺🇦</div> -->
+          <div class="symbol-icon">
+            <img src="img/map.svg" alt="Slon Graphic" class="slon-svg">
+          </div>       
           <div class="symbol-title" data-i18n="symbol_title_ukraine"></div>
           <div class="symbol-text" data-i18n="symbol_text_ukraine"></div>
         </div>
@@ -262,7 +295,10 @@
   </section>
 
   <!-- ===== MEMORY ACTIONS ===== -->
-  <section class="section memory-actions">
+  <section class="section memory-actions memory-scene">
+    <!-- ФОНОВИЙ СЛОН -->
+    <div class="elephant-bg"></div>
+
     <div class="memory-inner">
 
       <h2 class="memory-title" data-i18n="memory_title"></h2>
@@ -284,7 +320,7 @@
       </div>
 
       <!-- ===== CANDLE ===== -->
-      <div id="candleContainer" class="candle-visual">
+      <div id="candleContainer" class="candle-visual candle-scene">
 
         <!-- SVG СВІЧКА -->
         <svg width="80" height="160" viewBox="0 0 80 160">
@@ -376,13 +412,35 @@
     } */
   </script>  
 
-  <script>
+<!--   <script>
     function lightCandle() {
       document.querySelector('.candle-scene').classList.add('scene-lit');
 
       // показати flame
       document.querySelector('.flame').style.opacity = 1;
     }
-  </script>
+  </script> -->
+
+  <script>
+/*   const btn = document.getElementById("lightCandleBtn");
+  const candle = document.getElementById("candleContainer");
+
+  if (btn && candle) {
+    btn.addEventListener("click", () => {
+
+      // показати свічку
+      candle.classList.add("is-visible");
+
+      // активувати слона
+      candle.classList.add("is-lit");
+
+      // ефект натиснутої кнопки
+      btn.style.opacity = "0.5";
+
+      // плавний скрол
+      candle.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+  } */
+  </script>  
 </body>
 </html>
