@@ -1,0 +1,40 @@
+{
+  "memories": [
+    {
+      "id": 1,
+      "category": "family",
+      "date": "2023-12-12",
+      "author_uk": "мама",
+      "author_en": "Mother",
+      "text_uk": "Він був для нас Всесвітом. Справжній патріот, вірний друг і побратим, з великим серцем, відкритим для всіх. У будь-яких обставинах підбадьорював інших і повторював, що все буде добре. Так було і на Майдані, коли йому було 17. Так було і потім.",
+      "text_en": "He was our entire universe. A true patriot, a loyal friend and brother-in-arms, with a big heart open to everyone. No matter the circumstances, he kept lifting others up, repeating that everything would be alright. That's how it was on the Maidan, when he was 17. And that's how it stayed."
+    },
+    {
+      "id": 2,
+      "category": "family",
+      "date": "2023-12-15",
+      "author_uk": "Наречена",
+      "author_en": "Fiancée",
+      "text_uk": "Головним його бажанням була наша перемога. Після неї планував багато подорожувати — підлаштовуючи маршрути так, щоб встигати на футбольні матчі. Мріяв про будиночок у горах із неймовірними краєвидами і про доньку — обов'язково першу. У нього була мета створити благодійний фонд, який він би назвав «Білий Слон».",
+      "text_en": "His one wish was our victory. After that, he planned to travel — endlessly, always timing the trips around football matches. He dreamed of a little house in the mountains with breathtaking views, and of a daughter — the first child had to be a girl. And he wanted to start a charitable foundation. He'd already chosen the name — Bilyi Slon, the White Elephant — after his callsign."
+    },
+    {
+      "id": 3,
+      "category": "comrades",
+      "date": "2024-01-03",
+      "author_uk": "Побратим, 78-й десантно-штурмовий полк",
+      "author_en": "Brother-in-arms, 78th Air Assault Regiment",
+      "text_uk": "«Слон» завжди хотів бути попереду. Командир кликав його у штаб — він відмовлявся: «Я хочу заходити в міста і ставити прапори». Так і робив.",
+      "text_en": "«Slon» always wanted to be at the front. The commander kept asking him to come to headquarters — he refused: «I want to walk into cities and plant flags.» And that's exactly what he did."
+    },
+    {
+      "id": 4,
+      "category": "friends",
+      "date": "2024-01-20",
+      "author_uk": "Друг",
+      "author_en": "Friend",
+      "text_uk": "Людина, яка точно знала свої цінності й трималася їх. Кремезний, з широкими плечима, за які можна було сховатися. «Своя людина» з перших слів — і назавжди.",
+      "text_en": "A man who knew exactly what he stood for, and stood by it. Broad-shouldered, the kind of person you could hide behind. He became «one of us» within the first few words — and stayed that way for good."
+    }
+  ]
+}

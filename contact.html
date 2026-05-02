@@ -8,6 +8,8 @@
 
   <!-- EmailJS SDK -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+   <!-- SupdaBase SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 
 <body class="page">
@@ -46,16 +48,16 @@
       <a href="index.html" class="contact-back" data-i18n="contact_back"></a>
 
       <div class="section-header contact-header">
-        <div class="section-kicker" data-i18n="contact_kicker"></div>
-        <h2 class="section-title contact-title" data-i18n="contact_title"></h2>
-        <p class="section-subtitle" data-i18n="contact_subtitle"></p>
+        <div class="section-kicker" data-i18n="contact_kicker">Слова пам'яті</div>
+        <h2 class="section-title contact-title" data-i18n="contact_title">Залишити слова</h2>
+        <p class="section-subtitle" data-i18n="contact_subtitle">Поділіться спогадом, історією або просто словами підтримки. Ваші слова стануть частиною пам'яті про Ігоря.</p>
       </div>
 
       <form class="contact-form" id="contactForm">
 
         <div class="form-row">
           <label for="name">
-            <span data-i18n="contact_name_label"></span>
+            <span data-i18n="contact_name_label">Ваше ім'я</span>
           </label>
           <input
             type="text"
@@ -67,22 +69,22 @@
         </div>
 
         <div class="form-row">
-          <label for="relation">
-            <span data-i18n="contact_relation_label"></span>
-            <span class="form-optional" data-i18n="contact_optional"></span>
+          <label for="category">
+            <span data-i18n="contact_category_label">Як ви знали Ігоря</span>
           </label>
-          <input
-            type="text"
-            id="relation"
-            name="relation"
-            data-i18n-placeholder="contact_relation_placeholder"
-          />
-        </div>
+          <select id="category" name="category" required>
+            <option value="" disabled selected data-i18n="contact_category_placeholder">Оберіть категорію</option>
+            <option value="family"   data-i18n="contact_category_family">Родина</option>
+            <option value="comrades" data-i18n="contact_category_comrades">Побратим</option>
+            <option value="friends"  data-i18n="contact_category_friends">Друг</option>
+            <option value="other"    data-i18n="contact_category_other">Інше</option>
+          </select>
+        </div>        
 
         <div class="form-row">
           <label for="email">
-            <span data-i18n="contact_email_label"></span>
-            <span class="form-optional" data-i18n="contact_optional"></span>
+            <span data-i18n="contact_email_label">Email</span>
+            <span class="form-optional" data-i18n="contact_optional">(необов'язково)</span>
           </label>
           <input
             type="email"
@@ -94,7 +96,7 @@
 
         <div class="form-row">
           <label for="message">
-            <span data-i18n="contact_message_label"></span>
+            <span data-i18n="contact_message_label">Ваші слова</span>
           </label>
           <textarea
             id="message"
@@ -104,6 +106,15 @@
             required
           ></textarea>
         </div>
+
+        <input
+          type="text"
+          name="bot-field"
+          class="hidden-field"
+          tabindex="-1"
+          autocomplete="off"
+          aria-hidden="true"
+        />
 
         <div id="formError" class="form-error"></div>
 
@@ -150,70 +161,8 @@
     </div>
   </footer>
 
-  <script>
-    // ============================================
-    // EmailJS configuration
-    // ============================================
-    const EMAILJS_PUBLIC_KEY  = "8yPj0R0j8kKZJis61";
-    const EMAILJS_SERVICE_ID  = "service_m7gn0er";
-    const EMAILJS_TEMPLATE_ID = "template_xsxh01p";
-
-    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
-
-    const form    = document.getElementById("contactForm");
-    const success = document.getElementById("contactSuccess");
-    const errorEl = document.getElementById("formError");
-
-    // Допоміжна функція: дістати переклад зі словника, що завантажив lang.js.
-    // Використовуємо для рантайм-текстів (стан кнопки, помилка), яких немає в DOM.
-    function t(key, fallback) {
-      try {
-        const lang = document.documentElement.getAttribute("lang") || "uk";
-        const dict = (window.translationsCache && window.translationsCache[lang]) || {};
-        return dict[key] || fallback;
-      } catch (e) {
-        return fallback;
-      }
-    }
-
-    if (form) {
-      form.addEventListener("submit", async (e) => {
-        e.preventDefault();
-
-        const submitBtn = form.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
-
-        submitBtn.disabled = true;
-        submitBtn.textContent = t("contact_sending", "Надсилаємо...");
-        errorEl.textContent = "";
-        errorEl.classList.remove("is-visible");
-
-        const templateParams = {
-          name:     form.name.value.trim(),
-          relation: form.relation.value.trim() || "—",
-          email:    form.email.value.trim() || "—",
-          message:  form.message.value.trim()
-        };
-
-        try {
-          await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams);
-
-          form.style.display = "none";
-          success.classList.add("is-visible");
-          success.scrollIntoView({ behavior: "smooth", block: "center" });
-
-        } catch (err) {
-          console.error("EmailJS error:", err);
-          errorEl.textContent = t("contact_error", "Не вдалося надіслати повідомлення. Перевірте з'єднання та спробуйте ще раз.");
-          errorEl.classList.add("is-visible");
-
-          submitBtn.disabled = false;
-          submitBtn.textContent = originalText;
-        }
-      });
-    }
-  </script>
-
+  <script src="supabase-config.js"></script>
   <script src="lang.js"></script>
+  <script src="contact.js"></script>  
 </body>
 </html>

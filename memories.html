@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap&subset=cyrillic">
+
+  <title>Спогади — Ігор «Слон» Утюж</title>
+  <link rel="canonical" href="https://slon.life/memories.html" />
+  <link rel="alternate" hreflang="uk" href="https://slon.life/memories.html" />
+  <link rel="alternate" hreflang="en" href="https://slon.life/memories.html?lang=en" />
+
+  <meta name="description" content="Спогади рідних, побратимів і друзів про Ігоря «Слона» Утюжа." />
+  <meta property="og:title" content="Спогади — Ігор «Слон» Утюж">
+  <meta property="og:description" content="Слова рідних, побратимів і друзів. Те, що про нього хочуть сказати.">
+  <meta property="og:image" content="https://slon.life/img/og-cover.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://slon.life/memories.html" />
+  <meta property="og:locale" content="uk_UA" />
+
+  <!-- Supabase JS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body class="page">
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header-inner">
+
+      <a href="index.html" class="header-logo" aria-label="На головну сторінку">
+        <div class="header-logo-mark">
+          <img src="img/symbol-slon.png" alt="Символ Слон" class="logo-elephant" />
+        </div>
+        SLON
+      </a>
+
+      <nav class="header-nav">
+        <a href="index.html#about" data-i18n="menu_about">Про Ігоря</a>
+        <a href="index.html#war-path" data-i18n="menu_warpath">Шлях воїна</a>
+        <a href="index.html#life" data-i18n="menu_life">Фрагменти життя</a>
+        <a href="index.html#symbols" data-i18n="menu_symbols">Символіка</a>
+        <a href="index.html#gratitude" data-i18n="menu_gratitude">Подяка</a>
+      </nav>
+
+      <div class="header-lang">
+        <button type="button" data-lang="uk" class="is-active">UA</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ===== MEMORIES PAGE ===== -->
+  <section class="section memories-page">
+    <div class="memories-inner">
+
+      <a href="index.html" class="contact-back" data-i18n="memories_back">← Повернутись на головну</a>
+
+      <div class="section-header memories-header">
+        <div class="section-kicker" data-i18n="memories_kicker">Слова, які залишились</div>
+        <h2 class="section-title" data-i18n="memories_title">Спогади про Ігоря</h2>
+        <p class="section-subtitle" data-i18n="memories_subtitle">Слова рідних, побратимів і друзів. Тут ми зберігаємо все, що про нього хочуть сказати.</p>
+      </div>
+
+      <!-- Фільтри -->
+      <div class="memories-filters" role="tablist" aria-label="Фільтр спогадів">
+        <button type="button" class="memories-filter is-active" data-filter="all" role="tab" aria-selected="true">
+          <span data-i18n="memories_filter_all">Усі</span>
+          <span class="memories-filter-count" data-count="all">0</span>
+        </button>
+        <button type="button" class="memories-filter" data-filter="family" role="tab" aria-selected="false">
+          <span data-i18n="memories_filter_family">Родина</span>
+          <span class="memories-filter-count" data-count="family">0</span>
+        </button>
+        <button type="button" class="memories-filter" data-filter="comrades" role="tab" aria-selected="false">
+          <span data-i18n="memories_filter_comrades">Побратими</span>
+          <span class="memories-filter-count" data-count="comrades">0</span>
+        </button>
+        <button type="button" class="memories-filter" data-filter="friends" role="tab" aria-selected="false">
+          <span data-i18n="memories_filter_friends">Друзі</span>
+          <span class="memories-filter-count" data-count="friends">0</span>
+        </button>
+        <button type="button" class="memories-filter" data-filter="other" role="tab" aria-selected="false">
+          <span data-i18n="memories_filter_other">Інші</span>
+          <span class="memories-filter-count" data-count="other">0</span>
+        </button>
+      </div>
+
+      <!-- Список -->
+      <div id="memoriesList" class="memories-list" aria-live="polite"></div>
+
+      <!-- Стан "порожньо" -->
+      <div id="memoriesEmpty" class="memories-empty" hidden>
+        <p data-i18n="memories_empty">У цій категорії поки немає спогадів.</p>
+      </div>
+
+      <!-- "Показати ще" -->
+      <div class="memories-load-wrap">
+        <button type="button" id="memoriesLoadMore" class="btn btn-ghost" data-i18n="memories_load_more" hidden>Показати ще</button>
+      </div>
+
+      <!-- CTA -->
+      <div class="memories-cta">
+        <p data-i18n="memories_cta_text">Хочете додати свій спогад?</p>
+        <a href="contact.html" class="btn btn-primary" data-i18n="memories_cta_button">Залишити слова</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-left">
+        <div data-i18n="footer_left_text_1">Сайт-пам'ять про Ігоря «Слона» Утюжа.</div>
+        <div data-i18n="footer_left_text_2">Створено родиною та друзями. 2024 — 2026.</div>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-lang" data-i18n="footer_right_text">Мова</div>
+        <div class="footer-lang">
+          <span class="is-active" data-lang="uk" role="button" tabindex="0">UA</span>
+          <span data-lang="en" role="button" tabindex="0">EN</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Послідовність важлива: спочатку config, потім memories.js -->
+  <script src="supabase-config.js"></script>
+  <script src="lang.js"></script>
+  <script src="memories.js"></script>
+</body>
+</html>

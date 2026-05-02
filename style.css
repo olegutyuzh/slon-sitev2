@@ -245,6 +245,14 @@ a {
   margin-bottom: 28px;
 }
 
+.hero-text_slogan {
+  font-size: 13px;
+  font-style: italic;
+  color: #C8A45A;
+  opacity: 0.9;
+  margin-bottom: 28px;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -656,6 +664,71 @@ a {
   }
 }
 
+.quotes-cta {
+  text-align: center;
+  margin-top: 64px;
+}
+
+.quotes-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.quotes-counter-line {
+  width: 40px;
+  height: 1px;
+  background: rgba(200, 164, 90, 0.4);
+}
+
+.quotes-counter-text {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #A8A59A;
+}
+
+.btn-quotes-cta {
+  display: inline-block;
+  padding: 16px 44px;
+  background: #C8A45A;
+  color: #0a0a0c;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
+
+.btn-quotes-cta:hover {
+  background: #d4b059;
+  transform: translateY(-1px);
+}
+
+.quotes-cta-caption {
+  margin: 24px 0 0;
+  font-size: 13px;
+  color: #6a685e;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .quotes-cta {
+    margin-top: 48px;
+  }
+  .quotes-counter-line {
+    width: 28px;
+  }
+  .btn-quotes-cta {
+    padding: 14px 36px;
+    font-size: 12px;
+  }
+}
+
 /* ===== ФУТЕР ===== */
 
 .footer {
@@ -846,6 +919,14 @@ body::after {
   pointer-events: none;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 /* ===== MEMORY ACTIONS ===== */
 
 .memory-actions {
@@ -980,7 +1061,8 @@ body::after {
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(230, 230, 230, 0.1);
   border-radius: 12px;
@@ -992,18 +1074,20 @@ body::after {
   transition: border-color 0.2s ease, background 0.2s ease;
   width: 100%;
 }
-
+ 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: #6f7180;
 }
-
+ 
 .contact-form input:focus,
-.contact-form textarea:focus {
+.contact-form textarea:focus,
+.contact-form select:focus {
   outline: none;
   border-color: rgba(200, 164, 90, 0.6);
   background: rgba(255, 255, 255, 0.06);
 }
+ 
 
 .contact-form textarea {
   resize: vertical;
@@ -1022,12 +1106,67 @@ body::after {
   padding: 12px 28px;
 }
 
+/* ====================================================
+   Окремі стилі тільки для select — прибираємо нативну
+   стрілку браузера і малюємо свою (золоту, як акценти).
+   ==================================================== */
+ 
+.contact-form select {
+  /* Прибираємо нативну стрілку (важливо: всі три префікси) */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+ 
+  /* Місце справа під свою стрілку */
+  padding-right: 44px;
+ 
+  /* Курсор поверх селекту */
+  cursor: pointer;
+ 
+  /* SVG-стрілка вниз кольору #C8A45A. Вшита в base64,
+     щоб не залежати від додаткового файлу. */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path fill='none' stroke='%23C8A45A' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' d='M1 1.5l5 5 5-5'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 12px 8px;
+ 
+  /* Щоб іконку не з'їдало напівпрозоре тло */
+  background-color: rgba(255, 255, 255, 0.04);
+}
+ 
+.contact-form select:focus {
+  /* Зберігаємо стрілку при фокусі (бо змінюється фон) */
+  background-color: rgba(255, 255, 255, 0.06);
+}
+ 
+/* Колір disabled-опції (placeholder "Оберіть категорію") */
+.contact-form select option[disabled] {
+  color: #6f7180;
+}
+ 
+/* Самі опції випадного списку — стилізуються лише
+   на нативному рівні браузера. Можемо хоч задати темне
+   тло й світлий текст для тих браузерів, що це підтримують
+   (Chrome/Edge на macOS і Linux — підтримують,
+   Safari іноді ігнорує). */
+.contact-form select option {
+  background-color: #15161a;
+  color: #E6E6E6;
+}
+ 
+/* IE-фіча: прибрати стрілку в старих браузерах
+   (можна не додавати, але не зашкодить) */
+.contact-form select::-ms-expand {
+  display: none;
+}
+ 
+
 /* ===== ПОВІДОМЛЕННЯ ПРО УСПІХ ===== */
 
 .contact-success {
   display: none;
   text-align: center;
-  padding: 40px 20px;
+  padding: 60px 20px;
   border-radius: 16px;
   border: 1px solid rgba(200, 164, 90, 0.2);
   background: rgba(200, 164, 90, 0.04);
@@ -1040,7 +1179,20 @@ body::after {
 
 .contact-success-icon {
   font-size: 40px;
-  margin-bottom: 12px;
+  margin: 0 auto 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-success-icon .symbol-icon {
+  width: 56px;
+  height: 56px;
+}
+
+.contact-success-icon .symbol-icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .contact-success-title {
@@ -1123,25 +1275,6 @@ body::after {
 .candle-scene {
   position: relative;
   overflow: hidden;
-}
-
-/* сам слон */
-.elephant-bg {
-  position: absolute;
-  inset: 0; /* ← тепер займає ВЕСЬ блок */
-
-  background-image: url('img/elephant-dark.jpg');
-  background-size: cover;
-  background-position: center 20%;
-
-  opacity: 0;
-  transform: scale(1.02);
-
-  filter: brightness(0.75) contrast(1.1) blur(1.2px);
-
-  transition: all 1.8s ease;
-  pointer-events: none;
-  z-index: 0;
 }
 
 /* затемнення країв (ВАЖЛИВО) */
@@ -1232,14 +1365,6 @@ body::after {
   opacity: 1;
 }
 
-body {
-  background-image: url('/img/elephant-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: #000; /* запасний колір, поки фото вантажиться */
-}
 body::before {
   content: '';
   position: fixed;
@@ -1261,4 +1386,203 @@ body::before {
 .header-lang button:focus-visible {
   outline: 2px solid #C8A45A;
   outline-offset: 3px;
+}
+
+.contact-back:focus-visible {
+  outline: 2px solid #C8A45A;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ====================================================
+   ===== MEMORIES PAGE =====
+   ==================================================== */
+
+.memories-page {
+  padding-top: 140px;     /* щоб не залазило під фіксований header */
+  padding-bottom: 100px;
+}
+
+.memories-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.memories-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* ===== Фільтри ===== */
+
+.memories-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.memories-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  color: #B3B3B3;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.memories-filter:hover {
+  border-color: rgba(200, 164, 90, 0.5);
+  color: #E6E6E6;
+}
+
+.memories-filter.is-active {
+  background: rgba(200, 164, 90, 0.12);
+  border-color: #C8A45A;
+  color: #C8A45A;
+}
+
+.memories-filter-count {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* ===== Список карток ===== */
+
+.memories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.memory-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 24px 28px;
+  position: relative;
+  animation: memoryFadeIn 0.4s ease both;
+}
+
+@keyframes memoryFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.memory-card-mark {
+  font-family: "Playfair Display", Georgia, serif;
+  color: #C8A45A;
+  font-size: 56px;
+  line-height: 0.5;
+  margin-bottom: 12px;
+  user-select: none;
+}
+
+.memory-card-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #D4D4D4;
+  margin: 0 0 18px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.memory-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  flex-wrap: wrap;
+}
+
+.memory-card-author {
+  font-size: 14px;
+  color: #C8A45A;
+}
+
+.memory-card-date {
+  font-size: 12px;
+  color: #888780;
+  font-feature-settings: "tnum" 1;
+}
+
+/* ===== Стан "порожньо" і помилка ===== */
+
+.memories-empty,
+.memories-error {
+  text-align: center;
+  padding: 40px 20px;
+  color: #888780;
+  font-size: 14px;
+}
+
+/* ===== "Показати ще" ===== */
+
+.memories-load-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+/* ===== CTA ===== */
+
+.memories-cta {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.memories-cta p {
+  font-size: 15px;
+  color: #B3B3B3;
+  margin: 0 0 16px;
+}
+
+/* ===== Focus для доступності ===== */
+
+.memories-filter:focus-visible {
+  outline: 2px solid #C8A45A;
+  outline-offset: 3px;
+}
+
+/* ===== Мобільна адаптація ===== */
+
+@media (max-width: 640px) {
+  .memories-page {
+    padding-top: 100px;
+  }
+
+  .memory-card {
+    padding: 20px 20px;
+  }
+
+  .memory-card-text {
+    font-size: 14px;
+  }
+
+  .memory-card-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .memories-filter {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+
+.gratitude-more {
+  text-align: center;
+  margin-top: 40px;
 }

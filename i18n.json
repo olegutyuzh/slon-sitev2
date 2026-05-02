@@ -4,11 +4,13 @@
     "hero_title": "Ігор «Слон» Утюж",
     "hero_years": "18.04.1996 — 07.12.2023",
     "hero_text": "Захисник України, боєць 78-го окремого десантно-штурмового полку, учасник Революції Гідності. Людина, яка двічі зробила вибір йти першим — у 17 років на Майдан, і у 25 — на повномасштабну війну.",
+    "hero_text_slogan": "«Якщо мені врятували життя — значить, я потрібен для чогось більшого»",
     "btn_warpath": "Його шлях",
     "btn_life": "Фрагменти життя",
 
     "hero_action_warpath": "Його шлях",
     "hero_action_life": "Фрагменти життя",
+    "hero_action_gratitude": "Подяка",
     "hero_photo_mark": "СЛОН",
 
     "menu_about": "Про Ігоря",
@@ -53,7 +55,7 @@
     "section_title_life_fragments": "Фрагменти життя",
     "section_subtitle_life_fragments": "Ігор умів радіти простим речам — грі, місту, моментам із друзями. Кілька кадрів його живої історії.",
 
-    "life_card_quote_1": "«Завжди знаходив собі заняття»",
+    "life_card_quote_1": "«Жив так, ніби кожен день важливий»",
     "life_card_title_1": "З родиною",
     "life_card_text_1": "Дім, у якому виріс. Місто, яке він любив.",
 
@@ -107,7 +109,7 @@
 
     "light_candle": "Запалити свічку",
     "leave_message": "Залишити слова",
-    "candle_text": "Свічку запалено",
+    "candle_text": "Світло пам'яті горить",
 
     "contact_back": "← Повернутись на головну",
     "contact_kicker": "Слова пам'яті",
@@ -115,7 +117,6 @@
     "contact_subtitle": "Поділіться спогадом, історією або просто словами підтримки. Ваші слова стануть частиною пам'яті про Ігоря.",
     "contact_name_label": "Ваше ім'я",
     "contact_name_placeholder": "Як до вас звертатись",
-    "contact_relation_label": "Як ви знали Ігоря",
     "contact_relation_placeholder": "Друг, побратим, родич, колега...",
     "contact_email_label": "Email",
     "contact_email_placeholder": "email@example.com",
@@ -126,19 +127,51 @@
     "contact_cancel": "Скасувати",
     "contact_sending": "Надсилаємо...",
     "contact_error": "Не вдалося надіслати повідомлення. Перевірте з'єднання та спробуйте ще раз.",
-    "contact_success": "Ваше повідомлення успішно надіслано. Дякуємо за вашу пам'ять і підтримку."
+    "contact_success": "Ваше повідомлення успішно надіслано. Дякуємо за вашу пам'ять і підтримку.",
+
+    "memories_back": "← Повернутись на головну",
+    "memories_kicker": "Слова, які залишились",
+    "memories_title": "Спогади про Ігоря",
+    "memories_subtitle": "Слова рідних, побратимів і друзів. Тут ми зберігаємо все, що про нього хочуть сказати.",
+
+    "memories_filter_all": "Усі",
+    "memories_filter_family": "Родина",
+    "memories_filter_comrades": "Побратими",
+    "memories_filter_friends": "Друзі",
+    "memories_filter_other": "Інші",
+
+    "memories_empty": "У цій категорії поки немає спогадів.",
+    "memories_error": "Не вдалося завантажити спогади. Спробуйте оновити сторінку.",
+    "memories_load_more": "Показати ще",
+
+    "memories_cta_text": "Хочете додати свій спогад?",
+    "memories_cta_button": "Залишити слова",
+
+    "menu_memories": "Спогади",
+
+    "contact_category_label": "Як ви знали Ігоря",
+    "contact_category_placeholder": "Оберіть категорію",
+    "contact_category_family": "Родина",
+    "contact_category_comrades": "Побратим",
+    "contact_category_friends": "Друг",
+    "contact_category_other": "Інше",
+    
+    "quotes_read_all": "Читати всі →",
+    "quotes_caption": "Кожен голос — частина пам'яті"
   },
 
   "en": {
     "hero_kicker": "Soldier, friend, son",
     "hero_title": "Ihor «Slon» Utyuzh",
     "hero_years": "18.04.1996 — 07.12.2023",
-    "hero_text": "Defender of Ukraine, soldier of the 78th Separate Air Assault Regiment, participant of the Revolution of Dignity. A man who twice chose to step forward — at 17 onto the Maidan, and at 25 into a full-scale war.",
+    "hero_text": "Defender of Ukraine, soldier of the 78th Separate Air Assault Regiment, participant of the Revolution of Dignity. Born 27 years before he was killed defending Ukraine against Russia's full-scale invasion. Twice he chose to go: at 17, to the Maidan; at 25, to the war.",
+    "hero_text_slogan": "«If my life was saved, it means I'm needed for something greater»",
     "btn_warpath": "His path",
     "btn_life": "Life moments",
 
     "hero_action_warpath": "His path",
     "hero_action_life": "Life moments",
+    "hero_action_gratitude": "Remembrances",
     "hero_photo_mark": "SLON",
 
     "menu_about": "About",
@@ -237,7 +270,7 @@
 
     "light_candle": "Light a candle",
     "leave_message": "Leave words",
-    "candle_text": "The candle is lit",
+    "candle_text": "The light of memory is burning",
 
     "contact_back": "← Back to home",
     "contact_kicker": "Words of memory",
@@ -245,7 +278,6 @@
     "contact_subtitle": "Share a memory, story, or simply words of support. Your words will become part of the legacy of Ihor.",
     "contact_name_label": "Your name",
     "contact_name_placeholder": "How should we address you",
-    "contact_relation_label": "How you knew Ihor",
     "contact_relation_placeholder": "Friend, brother-in-arms, relative, colleague...",
     "contact_email_label": "Email",
     "contact_email_placeholder": "email@example.com",
@@ -256,6 +288,36 @@
     "contact_cancel": "Cancel",
     "contact_sending": "Sending...",
     "contact_error": "Failed to send the message. Please check your connection and try again.",
-    "contact_success": "Your message has been successfully sent. Thank you for your memory and support."
+    "contact_success": "Your message has been successfully sent. Thank you for your memory and support.",
+
+    "memories_back": "← Back to home",
+    "memories_kicker": "Words that remain",
+    "memories_title": "Memories of Ihor",
+    "memories_subtitle": "Words from family, brothers-in-arms, and friends. Here we keep everything that is said about him.",
+
+    "memories_filter_all": "All",
+    "memories_filter_family": "Family",
+    "memories_filter_comrades": "Comrades",
+    "memories_filter_friends": "Friends",
+    "memories_filter_other": "Others",
+
+    "memories_empty": "No memories in this category yet.",
+    "memories_error": "Failed to load memories. Please try refreshing the page.",
+    "memories_load_more": "Show more",
+
+    "memories_cta_text": "Would you like to share a memory?",
+    "memories_cta_button": "Leave words",
+
+    "menu_memories": "Memories",
+
+    "contact_category_label": "How you knew Ihor",
+    "contact_category_placeholder": "Choose a category",
+    "contact_category_family": "Family",
+    "contact_category_comrades": "Brother-in-arms",
+    "contact_category_friends": "Friend",
+    "contact_category_other": "Other",
+    
+    "quotes_read_all": "Read all →",
+    "quotes_caption": "Every voice is part of the memory"
   }
 }

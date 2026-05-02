@@ -19,6 +19,15 @@ function setLanguage(lang) {
     updateActiveButtons();
 }
 
+
+const urlLang = new URLSearchParams(location.search).get("lang");
+if (urlLang) {
+  currentLang = normalizeLang(urlLang);
+  localStorage.setItem("lang", currentLang);
+} else {
+  currentLang = normalizeLang(localStorage.getItem("lang"));
+}
+
 function updateActiveButtons() {
     // Підтримуємо як data-lang="ua", так і data-lang="uk"
     document.querySelectorAll("[data-lang]").forEach(btn => {

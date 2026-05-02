@@ -42,7 +42,7 @@
   <header class="header">
     <div class="header-inner">
 
-      <a href="index.html" class="header-logo">
+      <a href="index.html" class="header-logo" aria-label="На головну сторінку">
         <div class="header-logo-mark">
           <img src="img/symbol-slon.png" alt="Символ Слон" class="logo-elephant" />
         </div>
@@ -55,6 +55,7 @@
         <a href="#life" data-i18n="menu_life">Фрагменти життя</a>
         <a href="#symbols" data-i18n="menu_symbols">Символіка</a>
         <a href="#gratitude" data-i18n="menu_gratitude">Подяка</a>
+        <a href="memories.html" data-i18n="menu_memories">Спогади</a>
       </nav>
 
     <div class="header-lang">
@@ -71,7 +72,7 @@
 
       <div class="hero-photo-wrap">
         <div class="hero-photo">
-          <img src="img/hero-portrait.jpg" alt="Ігор Утюж" />
+          <img src="img/hero-portrait.jpg" alt="Ігор Утюж, портрет" />
         </div>
         <div class="hero-photo-overlay"></div>
         <div class="hero-photo-mark" data-i18n="hero_photo_mark">СЛОН</div>
@@ -83,10 +84,11 @@
         <div class="hero-years" data-i18n="hero_years">18.04.1996 — 07.12.2023</div>
 
         <p class="hero-text" data-i18n="hero_text">Захисник України, боєць 78-го окремого десантно-штурмового полку, учасник Революції Гідності. Людина, яка двічі зробила вибір йти першим — у 17 років на Майдан, і у 25 — на повномасштабну війну.</p>
-
+        <p class="hero-text_slogan" data-i18n="hero_text_slogan"><em>«Якщо мені врятували життя — значить, я потрібен для чогось більшого»</em></p>
         <div class="hero-actions">
           <a href="#war-path" class="btn btn-primary" data-i18n="hero_action_warpath">Його шлях</a>
-          <a href="#life" class="btn btn-ghost" data-i18n="hero_action_life">Фрагменти життя</a>
+          <!-- <a href="#life" class="btn btn-ghost" data-i18n="hero_action_life">Фрагменти життя</a> -->
+          <a href="#gratitude" class="btn btn-ghost" data-i18n="hero_action_gratitude">Подяка</a>
         </div>
       </div>
 
@@ -160,13 +162,13 @@
       <div class="war-path-photos">
 
         <div class="war-photo-card">
-          <img src="img/war1.jpg" alt="" />
-          <div class="war-photo-caption" data-i18n="war_photo_caption_1"></div>
+          <img src="img/war1.jpg" alt="З побратимами 78-го полку" />
+          <div class="war-photo-caption" data-i18n="war_photo_caption_1" alt="З побратимами 78-го полку">З побратимами 78-го полку</div>
         </div>
 
         <div class="war-photo-card is-portrait">
-          <img src="img/war2.jpg" alt="" />
-          <div class="war-photo-caption" data-i18n="war_photo_caption_2"></div>
+          <img src="img/war2.jpg" alt="Робота з дроном на передовій" />
+          <div class="war-photo-caption" data-i18n="war_photo_caption_2" alt="Робота з дроном на передовій">Робота з дроном на передовій</div>
         </div>
 
       </div>
@@ -190,7 +192,7 @@
           <div class="life-card-img">
             <img src="img/life1.jpg" alt="" />
             <div class="life-card-overlay"></div>
-            <div class="life-card-quote" data-i18n="life_card_quote_1">«Завжди знаходив собі заняття»</div>
+            <div class="life-card-quote" data-i18n="life_card_quote_1">«Жив так, ніби кожен день важливий»</div>
           </div>
           <div class="life-card-body">
             <div class="life-card-title" data-i18n="life_card_title_1">З родиною</div>
@@ -306,32 +308,44 @@
           <div class="quote-author" data-i18n="gratitude_author_4">— Друг</div>
         </div>
 
+        <div class="quotes-cta">
+          <div class="quotes-counter">
+            <span class="quotes-counter-line"></span>
+            <span class="quotes-counter-text">&nbsp;</span>
+            <span class="quotes-counter-line"></span>
+          </div>
+          
+          <a href="memories.html" class="btn btn-quotes-cta" data-i18n="quotes_read_all">Читати всі →</a>
+          
+          <p class="quotes-cta-caption" data-i18n="quotes_caption">Кожен голос — частина пам'яті</p>
+        </div>
+
       </div>
-      
+     
     </div>
   </section>
 
   <!-- ===== MEMORY ACTIONS ===== -->
   <section class="section memory-actions memory-scene">
     <!-- ФОНОВИЙ СЛОН -->
-    <div class="elephant-bg"></div>
+    <!-- <div class="elephant-bg"></div> -->
 
     <div class="memory-inner">
 
-      <h2 class="memory-title" data-i18n="memory_title"></h2>
+      <h2 class="memory-title" data-i18n="memory_title">Вшанувати пам’ять</h2>
 
-      <p class="memory-subtitle" data-i18n="memory_subtitle"></p>
+      <p class="memory-subtitle" data-i18n="memory_subtitle">Якщо ви знали Ігоря або хочете залишити слова — зробіть це тут.</p>
 
       <div class="memory-buttons">
 
-        <button id="lightCandleBtn" class="memory-btn">
-          <span class="memory-btn-icon" type="button">
+        <button id="lightCandleBtn" type="button" class="memory-btn">
+          <span class="memory-btn-icon">
             <!-- 🕯️ -->
             <div class="symbol-icon">
               <img src="img/candle.svg" alt="Candle" aria-hidden="true" class="slon-svg">
             </div>
           </span>
-          <span data-i18n="light_candle"></span>
+          <span data-i18n="light_candle">Запалити свічку</span>
         </button>
 
         <a href="contact.html" class="memory-btn">
@@ -341,7 +355,7 @@
               <img src="img/message.svg" alt="Message" aria-hidden="true" class="slon-svg">
             </div>
           </span>
-          <span data-i18n="leave_message"></span>
+          <span data-i18n="leave_message">Залишити слова</span>
         </a>
 
       </div>
@@ -387,7 +401,7 @@
 
         </svg>
 
-        <p class="candle-text" data-i18n="candle_text"></p>
+        <p class="candle-text" data-i18n="candle_text">Свічку запалено</p>
 
       </div>
 
@@ -399,12 +413,12 @@
     <div class="footer-inner">
 
       <div class="footer-left">
-        <div data-i18n="footer_left_text_1"></div>
-        <div data-i18n="footer_left_text_2"></div>
+        <div data-i18n="footer_left_text_1">Сайт-пам'ять про Ігоря «Слона» Утюжа.</div>
+        <div data-i18n="footer_left_text_2">Створено родиною та друзями. 2024 — 2026.</div>
       </div>
 
       <div class="footer-right">
-        <div class="footer-lang" data-i18n="footer_right_text"></div>
+        <div class="footer-lang" data-i18n="footer_right_text">Мова</div>
         <div class="footer-lang">
           <span class="is-active" data-lang="uk" role="button" tabindex="0">UA</span>
           <span data-lang="en" role="button" tabindex="0">EN</span>
@@ -413,8 +427,10 @@
 
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
   <script src="lang.js"></script>
   <script src="candle.js"></script>
- 
+  <script src="quotes-counter.js"></script>
 </body>
 </html>

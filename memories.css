@@ -1,0 +1,187 @@
+/* ====================================================
+   ===== MEMORIES PAGE =====
+   ==================================================== */
+
+.memories-page {
+  padding-top: 140px;     /* щоб не залазило під фіксований header */
+  padding-bottom: 100px;
+}
+
+.memories-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.memories-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* ===== Фільтри ===== */
+
+.memories-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.memories-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  color: #B3B3B3;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.memories-filter:hover {
+  border-color: rgba(200, 164, 90, 0.5);
+  color: #E6E6E6;
+}
+
+.memories-filter.is-active {
+  background: rgba(200, 164, 90, 0.12);
+  border-color: #C8A45A;
+  color: #C8A45A;
+}
+
+.memories-filter-count {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* ===== Список карток ===== */
+
+.memories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.memory-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 24px 28px;
+  position: relative;
+  animation: memoryFadeIn 0.4s ease both;
+}
+
+@keyframes memoryFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.memory-card-mark {
+  font-family: "Playfair Display", Georgia, serif;
+  color: #C8A45A;
+  font-size: 56px;
+  line-height: 0.5;
+  margin-bottom: 12px;
+  user-select: none;
+}
+
+.memory-card-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #D4D4D4;
+  margin: 0 0 18px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.memory-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  flex-wrap: wrap;
+}
+
+.memory-card-author {
+  font-size: 14px;
+  color: #C8A45A;
+}
+
+.memory-card-date {
+  font-size: 12px;
+  color: #888780;
+  font-feature-settings: "tnum" 1;
+}
+
+/* ===== Стан "порожньо" і помилка ===== */
+
+.memories-empty,
+.memories-error {
+  text-align: center;
+  padding: 40px 20px;
+  color: #888780;
+  font-size: 14px;
+}
+
+/* ===== "Показати ще" ===== */
+
+.memories-load-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+/* ===== CTA ===== */
+
+.memories-cta {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.memories-cta p {
+  font-size: 15px;
+  color: #B3B3B3;
+  margin: 0 0 16px;
+}
+
+/* ===== Focus для доступності ===== */
+
+.memories-filter:focus-visible {
+  outline: 2px solid #C8A45A;
+  outline-offset: 3px;
+}
+
+/* ===== Мобільна адаптація ===== */
+
+@media (max-width: 640px) {
+  .memories-page {
+    padding-top: 100px;
+  }
+
+  .memory-card {
+    padding: 20px 20px;
+  }
+
+  .memory-card-text {
+    font-size: 14px;
+  }
+
+  .memory-card-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .memories-filter {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
