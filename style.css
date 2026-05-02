@@ -390,7 +390,8 @@ a {
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: -19px;
+  left: -22.5px;
+  /*left: -19px;*/
   top: 4px;
   width: 9px;
   height: 9px;
@@ -1252,4 +1253,12 @@ body::before {
     background-attachment: scroll;
     background-position: center center;
   }
+}
+
+.btn:focus-visible,
+.memory-btn:focus-visible,
+.header-nav a:focus-visible,
+.header-lang button:focus-visible {
+  outline: 2px solid #C8A45A;
+  outline-offset: 3px;
 }
