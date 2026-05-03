@@ -67,11 +67,12 @@
 }
 
 .memory-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  padding: 24px 28px;
   position: relative;
+  padding: 28px 28px 24px 36px;
+  background: transparent;
+  border: none;
+  border-left: 2px solid rgba(200, 164, 90, 0.25);
+  border-radius: 0;
   animation: memoryFadeIn 0.4s ease both;
 }
 
@@ -81,15 +82,20 @@
 }
 
 .memory-card-mark {
+  position: absolute;
+  top: -18px;
+  left: 18px;
   font-family: "Playfair Display", Georgia, serif;
-  color: #C8A45A;
-  font-size: 56px;
-  line-height: 0.5;
-  margin-bottom: 12px;
+  font-size: 110px;
+  line-height: 1;
+  color: rgba(200, 164, 90, 0.12);
+  pointer-events: none;
   user-select: none;
+  margin: 0;
 }
 
 .memory-card-text {
+  position: relative;
   font-size: 15px;
   line-height: 1.7;
   color: #D4D4D4;
@@ -167,7 +173,13 @@
   }
 
   .memory-card {
-    padding: 20px 20px;
+    padding: 22px 20px 20px 26px;
+  }
+
+  .memory-card-mark {
+    font-size: 80px;
+    top: -12px;
+    left: 12px;
   }
 
   .memory-card-text {

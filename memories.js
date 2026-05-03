@@ -93,7 +93,7 @@
       const text   = (lang === "en" && m.text_en)   ? m.text_en   : m.text_uk;
       return `
         <article class="memory-card" data-category="${escape(m.category)}">
-          <div class="memory-card-mark" aria-hidden="true">"</div>
+          <div class="memory-card-mark" aria-hidden="true">&ldquo;</div>
           <p class="memory-card-text">${escape(text)}</p>
           <div class="memory-card-meta">
             <span class="memory-card-author">— ${escape(author)}</span>
