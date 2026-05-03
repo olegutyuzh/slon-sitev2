@@ -48,6 +48,16 @@ function applyTranslations() {
             }
         });
 
+        // HTML-вміст: <p data-i18n-html="key">...</p>
+        // Використовується для перекладів, що містять HTML-теги (<em>, <strong>, <br> тощо).
+        // Сюди можна вставляти тільки переклади з власного i18n.json — НЕ дані від користувачів.
+        document.querySelectorAll("[data-i18n-html]").forEach(el => {
+            const key = el.getAttribute("data-i18n-html");
+            if (dict[key] !== undefined) {
+                el.innerHTML = dict[key];
+            }
+        });
+
         // Placeholder для input/textarea: data-i18n-placeholder="key"
         document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
             const key = el.getAttribute("data-i18n-placeholder");
