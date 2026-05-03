@@ -1,0 +1,165 @@
+/* ====================================================
+   ===== ЛІЧИЛЬНИК + КАРТКА СВІЧКИ =====
+   ====================================================
+   Додати в кінець style.css.
+   ВАЖЛИВО: НЕ чіпаємо .memory-btn (border-radius: 999px)
+   і НЕ чіпаємо .memory-buttons. Старий вигляд кнопок —
+   повністю зберігається.
+   ==================================================== */
+
+/* ===== Маленький лічильник прямо під кнопками ===== */
+
+.candle-counter-line {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 13px;
+  color: #888780;
+}
+
+.candle-counter-line-number {
+  color: #C8A45A;
+  font-weight: 500;
+  font-feature-settings: "tnum" 1;
+}
+
+/* Якщо кнопка вже клікалася і свічка тепер у стані done,
+   ми додаємо клас .is-active — щоб число стало золотим
+   акцентом. */
+.candle-counter-line.is-active {
+  color: #B3B3B3;
+}
+
+/* ===== Картка свічки (зʼявляється після кліку) ===== */
+
+.candle-card {
+  max-width: 380px;
+  margin: 32px auto 0;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(200, 164, 90, 0.25);
+  border-radius: 16px;
+  padding: 28px 24px;
+  text-align: center;
+  animation: candleCardFadeIn 0.5s ease both;
+}
+
+@keyframes candleCardFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.candle-card-state {
+  animation: candleCardFadeIn 0.4s ease both;
+}
+
+/* Іконка свічки в картці */
+.candle-card-icon {
+  margin-bottom: 14px;
+}
+
+.candle-card-icon .slon-svg {
+  width: 32px;
+  height: 40px;
+  display: inline-block;
+  filter: brightness(1.1);
+}
+
+.candle-card-text {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 17px;
+  color: #C8A45A;
+  margin: 0;
+}
+
+/* ===== Форма підпису ===== */
+
+.candle-sign-form {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.candle-sign-text {
+  font-size: 12px;
+  color: #888780;
+  margin: 0 0 12px;
+}
+
+.candle-name-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(230, 230, 230, 0.1);
+  border-radius: 12px;
+  padding: 10px 14px;
+  color: #E6E6E6;
+  font-family: inherit;
+  font-size: 13px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.candle-name-input::placeholder {
+  color: #6f7180;
+}
+
+.candle-name-input:focus {
+  outline: none;
+  border-color: rgba(200, 164, 90, 0.6);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.candle-sign-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Менша версія memory-btn для картки —
+   щоб не перевантажувати вузький блок */
+.candle-sign-btn {
+  padding: 9px 22px !important;
+  font-size: 13px !important;
+}
+
+.candle-skip {
+  display: inline-block;
+  font-size: 12px;
+  color: #888780;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.candle-skip:hover {
+  color: #B3B3B3;
+}
+
+.candle-skip:focus-visible {
+  outline: 2px solid #C8A45A;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ===== Стан "підписано" ===== */
+
+.candle-done-name {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 16px;
+  color: #C8A45A;
+  margin-top: 14px;
+}
+
+.candle-done-name:empty {
+  display: none;
+}
+
+/* ===== Мобільна адаптація ===== */
+
+@media (max-width: 640px) {
+  .candle-card {
+    padding: 24px 18px;
+  }
+  .candle-card-text {
+    font-size: 15px;
+  }
+}

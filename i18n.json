@@ -157,7 +157,50 @@
     "contact_category_other": "Інше",
     
     "quotes_read_all": "Читати всі →",
-    "quotes_caption": "Кожен голос — частина пам'яті"
+    "quotes_caption": "Кожен голос — частина пам'яті",
+  
+    "candle_counter_line": "свічок памʼяті вже горить",
+  
+    "candle_lit_message": "Світло памʼяті горить",
+    "candle_done_message": "Ваша свічка горить",
+  
+    "candle_sign_prompt": "Ваше імʼя залишиться поряд",
+    "candle_name_placeholder": "Як до вас звертатись",
+    "candle_sign_btn": "Підписати",
+    "candle_skip": "пропустити",
+
+    "menu_biography": "Біографія",
+
+    "bio_hero_kicker": "Біографія",
+    "bio_hero_title": "Ігор «Слон» Утюж",
+    "bio_hero_years": "18.04.1996 — 07.12.2023",
+    "bio_hero_lede": "Повна біографія Ігоря «Слона» Утюжа — від дитинства до останнього дня. Детальна розповідь про його життя, вибори, службу і те, ким він був для тих, хто його знав.",
+    "bio_btn_back": "← Повернутися на головну",
+    "bio_section_kicker_childhood": "Дитинство і юність",
+    "bio_section_title_childhood": "Ранні роки і формування характеру",
+    "bio_section_text_childhood": "Ігор народився і виріс у Києві. З дитинства був активним, енергійним і допитливим. Батьки згадують його як хлопця, який «завжди знаходив собі заняття» і мав природну наполегливість. Займався єдиноборствами, веслуванням, любив спорт і людей. Його вміння знаходити спільну мову було майже містичним — кілька слів, усмішка, і він уже «свій» серед нових людей.",
+    "bio_section_kicker_adulthood": "Доросле життя",
+    "bio_section_title_adulthood": "Життя до війни",
+    "bio_section_text_adulthood": "До повномасштабного вторгнення Ігор жив звичайним життям молодої людини: навчання, друзі, подорожі, футбол, шахи, плани на майбутнє. Він любив своє місто, любив матчі національної збірної, любив прості радості. Мріяв колись поїхати в Африку — захищати слонів. Слони були його дитячою любов'ю, від якої згодом виріс і його позивний.",
+    "bio_section_kicker_service": "Служба",
+    "bio_section_title_service": "Революція Гідності і війна",
+    "bio_section_text_service": "У 17 років Ігор зробив вибір, який визначив усе подальше життя. Він став частиною 24-ї сотні самооборони Майдану, чергував на барикадах, допомагав витягувати поранених. 18 лютого 2014 року в Маріїнському парку отримав важке поранення — частина черепа була роздроблена. Лікарі врятували йому життя. Тоді він сказав фразу, яка стала пророчою: «Якщо мені врятували життя — значить, я потрібен для чогось більшого». Попри тяжке поранення на Майдані, Ігор пройшов реабілітацію і приєднався до Антитерористичної операції. Отримав медаль «За жертовність і любов до України». Повернувся з фронту, але війна вже не відпускала. Ще до повномасштабного вторгнення Ігор сказав родині: «Якщо почнеться — я піду». 24 лютого 2022 року він був за кордоном — і повернувся в Україну першими ж можливими шляхами. Записався у 78-й окремий десантно-штурмовий полк. Став оператором БПЛА. Брав участь у звільненні Київщини та Харківщини. Згодом — Запорізький та Херсонський напрямки. Працював на складних ділянках, підтримував побратимів, ніколи не залишав своїх. У грудні 2023 року, під час виконання бойового завдання, його позицію накрив ворожий снаряд.",
+    "bio_ch1_kicker":"Розділ перший",
+    "bio_ch1_title":"Дитинство і юність",
+    "bio_ch1_p1":"Ігор народився і виріс у Києві. З дитинства був активним, енергійним і допитливим. Батьки згадують його як хлопця, який «завжди знаходив собі заняття» і мав природну наполегливість. Займався єдиноборствами, веслуванням, любив спорт і людей. Його вміння знаходити спільну мову було майже містичним — кілька слів, усмішка, і він уже «свій» серед нових людей.",
+    "bio_ch1_p2":"У дитинстві Ігор дуже любив тварин, особливо слонів. Він міг годинами дивитися на них у зоопарку і мріяв колись поїхати в Африку — захищати слонів. Ця любов до слонів була настільки сильною, що згодом стала його позивним у війську — «Слон».",
+    "bio_ch1_photo_caption": "Ігор у дитинстві, з улюбленою іграшкою-слоном",
+    "bio_ch1_p3": "У школі Ігор був активним учнем, любив спорт і був популярним серед однокласників. Він займався єдиноборствами, веслуванням, любив футбол і шахи. Його друзі згадують його як людину, яка завжди була поруч, підтримувала і надихала інших. Він мав природну харизму і вмів знаходити спільну мову з різними людьми.",
+    "bio_ch1_quote_mom": "Він був для нас Всесвітом. Справжній патріот, вірний друг і побратим, з великим серцем, відкритим для всіх. У будь-яких обставинах підбадьорював інших і повторював, що все буде добре. Так було і на Майдані, коли йому було 17. Так було і потім.",
+    "bio_ch1_quote_mom_author": "— Ніна, мама Ігоря",
+    "bio_ch1_p4": "У 2013 році, коли почалися події на Майдані, Ігор був одним із перших, хто приєднався до протестів. Він став частиною 24-ї сотні самооборони Майдану, чергував на барикадах, допомагав витягувати поранених. Його друзі згадують, що він був дуже відданим і завжди був готовий допомогти іншим. Він не боявся ризикувати своїм життям заради інших і заради України.",
+    "bio_ch1_quote_mom2": "Головним його бажанням була наша перемога. Після неї планував багато подорожувати — підлаштовуючи маршрути так, щоб встигати на футбольні матчі. Мріяв про будиночок у горах із неймовірними краєвидами і про доньку — обов'язково першу. У нього була мета створити благодійний фонд, який він би назвав «Білий Слон».",
+    "bio_ch1_quote_mom2_author":"— Ніна, мама Ігоря",
+    "bio_ch1_photo_maidan_caption": "Ігор на Майдані, 2014 рік",
+    "bio_ch1_p5": "18 лютого 2014 року, під час однієї з найгарячіших ночей на Майдані, Ігор отримав важке поранення — частина його черепа була роздроблена. Лікарі врятували йому життя, але це поранення стало переломним моментом у його житті. Він сказав тоді фразу, яка стала пророчою: «Якщо мені врятували життя — значить, я потрібен для чогось більшого». Ця подія не зламала його дух, а навпаки — зміцнила його рішучість боротися за свою країну.",
+    "bio_ch1_p6": "Після Майдану Ігор пройшов довгу реабілітацію, але він не міг залишатися осторонь від того, що відбувалося в країні. Він приєднався до Антитерористичної операції на сході України, де отримав медаль «За жертовність і любов до України». Повернувшись з фронту, він не міг знайти спокою — війна вже не відпускала його.",
+    "bio_ch1_quote_dad": "«Слон» завжди хотів бути попереду. Командир кликав його у штаб — він відмовлявся: «Я хочу заходити в міста і ставити прапори». Так і робив.",
+    "bio_ch1_quote_dad_author": "— Олег, тато Ігоря"
   },
 
   "en": {
@@ -318,6 +361,34 @@
     "contact_category_other": "Other",
     
     "quotes_read_all": "Read all →",
-    "quotes_caption": "Every voice is part of the memory"
+    "quotes_caption": "Every voice is part of the memory",
+
+    "candle_counter_line": "candles of memory are burning",
+  
+    "candle_lit_message": "The light of memory burns",
+    "candle_done_message": "Your candle burns",
+  
+    "candle_sign_prompt": "Your name will stay beside it",
+    "candle_name_placeholder": "How should we call you",
+    "candle_sign_btn": "Sign",
+    "candle_skip": "skip",
+
+    "menu_biography": "Biography",
+    "bio_hero_kicker": "Biography",
+    "bio_hero_title": "Ihor «Slon» Utyuzh",
+    "bio_hero_years": "18.04.1996 — 07.12.2023",
+    "bio_hero_lede": "The full biography of Ihor «Slon» Utyuzh — from childhood to the last day. A detailed story of his life, choices, service, and who he was to those who knew him.",
+    "bio_btn_back": "← Back to home",
+    "bio_section_kicker_childhood": "Childhood and youth",
+    "bio_section_title_childhood": "Early years and character formation",
+    "bio_section_text_childhood": "Ihor was born and raised in Kyiv. From early childhood, he was active, energetic, and curious. His parents recall a boy who «always found something to do» and had a natural determination. He practiced martial arts, rowing, and team sports. He had a rare ability to connect with people — a few words, a smile, and he was already «one of us» among strangers.",
+    "bio_section_kicker_adulthood": "Adulthood",
+    "bio_section_title_adulthood": "Life before the war",
+    "bio_section_text_adulthood": "Before the full-scale invasion, Ihor lived an ordinary young life: studies, friends, travels, football, chess, plans for the future. He loved his city, the national football team, and small everyday joys. He once dreamed of going to Africa to protect elephants. That childhood love eventually grew into his callsign.",
+    "bio_section_kicker_service": "Service",
+    "bio_section_title_service": "Revolution of Dignity and the war",
+    "bio_section_text_service": "At 17, Ihor made a choice that shaped everything that followed. He joined the 24th Self-Defense Sotnia of Maidan, stood on the barricades, and helped evacuate the wounded. On February 18, 2014, in Mariinsky Park, he was severely injured — part of his skull was shattered. Doctors saved his life. Later he said a phrase that became prophetic: «If my life was saved, it means I'm needed for something greater.» Despite his severe injury on Maidan, Ihor recovered and joined the Anti-Terrorist Operation. He received the medal «For Sacrifice and Love for Ukraine.» He returned from the front — but the war never let him go. Months before the full-scale invasion, Ihor told his family: «If it starts — I will go.» On February 24, 2022, he was abroad — and immediately found a way back to Ukraine. He joined the 78th Separate Air Assault Regiment as a UAV operator. He took part in liberating the Kyiv and Kharkiv regions, then served on the Zaporizhzhia and Kherson fronts. He worked on difficult positions, supported his comrades, and never left anyone behind. In December 2023, during a combat mission, an enemy shell struck his position.",
+    "bio_ch1_kicker":"Chapter 1",
+    "bio_ch1_title":"Childhood and Youth"
   }
 }

@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="candle.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap&subset=cyrillic">  
@@ -336,28 +337,78 @@
 
       <p class="memory-subtitle" data-i18n="memory_subtitle">Якщо ви знали Ігоря або хочете залишити слова — зробіть це тут.</p>
 
+      <!-- ===== Дві кнопки (як було) ===== -->
       <div class="memory-buttons">
-
+      
         <button id="lightCandleBtn" type="button" class="memory-btn">
           <span class="memory-btn-icon">
-            <!-- 🕯️ -->
-            <div class="symbol-icon">
-              <img src="img/candle.svg" alt="Candle" aria-hidden="true" class="slon-svg">
-            </div>
+            <img src="img/candle.svg" alt="" aria-hidden="true" class="slon-svg" />
           </span>
           <span data-i18n="light_candle">Запалити свічку</span>
         </button>
-
+      
         <a href="contact.html" class="memory-btn">
           <span class="memory-btn-icon">
-            <!-- 💬 -->
-            <div class="symbol-icon">
-              <img src="img/message.svg" alt="Message" aria-hidden="true" class="slon-svg">
-            </div>
+            <img src="img/message.svg" alt="" aria-hidden="true" class="slon-svg" />
           </span>
           <span data-i18n="leave_message">Залишити слова</span>
         </a>
-
+      
+      </div>
+      
+      <!-- ===== Маленький лічильник прямо під кнопками ===== -->
+      <div class="candle-counter-line">
+        <span class="candle-counter-line-number" id="candlesCount">—</span>
+        <span class="candle-counter-line-text" data-i18n="candle_counter_line">
+          свічок памʼяті вже горить
+        </span>
+      </div>
+      
+      <!-- ===== Картка свічки — зʼявляється після кліку ===== -->
+      <div id="candleCard" class="candle-card" hidden>
+      
+        <!-- Стан "щойно запалена" — пропозиція підписати -->
+        <div id="candleStateLit" class="candle-card-state">
+          <div class="candle-card-icon">
+            <img src="img/candle.svg" alt="" aria-hidden="true" class="slon-svg" />
+          </div>
+          <p class="candle-card-text" data-i18n="candle_lit_message">
+            Світло памʼяті горить
+          </p>
+      
+          <div class="candle-sign-form">
+            <p class="candle-sign-text" data-i18n="candle_sign_prompt">
+              Ваше імʼя залишиться поряд
+            </p>
+            <input
+              type="text"
+              id="candleName"
+              class="candle-name-input"
+              maxlength="80"
+              data-i18n-placeholder="candle_name_placeholder"
+              placeholder="Як до вас звертатись" />
+            <div class="candle-sign-actions">
+              <button type="button" id="signCandleBtn" class="memory-btn candle-sign-btn">
+                <span data-i18n="candle_sign_btn">Підписати</span>
+              </button>
+              <a href="#" id="skipCandleBtn" class="candle-skip" data-i18n="candle_skip">
+                пропустити
+              </a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Стан "вже підписано / повторний візит" -->
+        <div id="candleStateDone" class="candle-card-state" hidden>
+          <div class="candle-card-icon">
+            <img src="img/candle.svg" alt="" aria-hidden="true" class="slon-svg" />
+          </div>
+          <p class="candle-card-text" data-i18n="candle_done_message">
+            Ваша свічка горить
+          </p>
+          <div class="candle-done-name" id="candleDoneName"></div>
+        </div>
+      
       </div>
 
       <!-- ===== CANDLE ===== -->
@@ -432,5 +483,6 @@
   <script src="lang.js"></script>
   <script src="candle.js"></script>
   <script src="quotes-counter.js"></script>
+  <script src="candle_counter.js"></script>
 </body>
 </html>
