@@ -90,6 +90,25 @@ function applyTranslations() {
             }
         });
 
+        // Двомовний контент (для блогу): <span data-lang-content="uk">...</span>
+        // Показуємо тільки той блок, що відповідає поточній мові.
+        // Використовується там, де контент зберігається не в i18n.json,
+        // а прямо в HTML двома мовами одразу (наприклад, статті блогу).
+        document.querySelectorAll("[data-lang-content]").forEach(el => {
+            const elLang = normalizeLang(el.getAttribute("data-lang-content"));
+            if (elLang === currentLang) {
+                // Прибираємо inline-стиль зовсім, щоб НЕ перемогло CSS-правило
+                // [data-lang-content="en"] { display: none } у blog.css
+                el.style.removeProperty("display");
+                // Підказка браузеру: для надійності задаємо клас замість inline-style.
+                // CSS нижче (.lang-visible) має пріоритет над загальним правилом.
+                el.classList.add("lang-visible");
+            } else {
+                el.style.display = "none";
+                el.classList.remove("lang-visible");
+            }
+        });
+
         // Оновлюємо <html lang="...">
         document.documentElement.setAttribute("lang", currentLang);
     };
@@ -99,7 +118,7 @@ function applyTranslations() {
         return;
     }
 
-    fetch("i18n.json")
+    fetch("/i18n.json")
         .then(res => {
             if (!res.ok) throw new Error("Failed to load i18n.json: " + res.status);
             return res.json();

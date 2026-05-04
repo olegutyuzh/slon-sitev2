@@ -245,8 +245,35 @@
     "bio_ch5_p7":"До війни Ігор був інструктором з рафтингу, отримував неймовірне задоволення від сплавів бурхливими гірськими потічками. Одного дня хотів підкорити відомі рафтингові маршрути в Америці та Африці. Марив водою і швидкістю. А ще мріяв створити власний благодійний фонд.",
     "bio_ch5_p8":"У лютому 2022 року Ігор зробив вибір і став на захист найціннішого. Слон віддав життя за те, аби була перемога, був Крим, була свобода, була успішна Україна, і щоб наше з вами життя продовжувалося і було таким, як любив Ігор: із подорожами, футболом, спортивними змаганнями, улюбленими друзями, великими планами і ще більшими мріями.",
 
-    "bio_closing_thanks":"Дякуємо, Слон.",
-    "bio_closing_memory":"Вічна пам'ять Герою."
+    "bio_closing_thanks": "Дякуємо, Слон.",
+    "bio_closing_memory": "Вічна пам'ять Герою.",
+
+    "menu_stories": "Історії",
+    "stories_kicker": "Блог пам'яті",
+    "stories_title": "Історії",
+    "stories_subtitle": "Спогади, події, маленькі та великі історії про Ігоря — від родини, друзів і побратимів. Щоразу, коли в нас є що додати, з'являється новий запис.",
+    "stories_filter_all": "Усі",
+    "stories_filter_childhood": "Дитинство",
+    "stories_filter_maidan": "Майдан",
+    "stories_filter_service": "Служба",
+    "stories_filter_tribute": "Вшанування",
+    "stories_read_more": "Читати →",
+    "stories_empty": "Поки що немає опублікованих історій. Скоро з'являться перші записи.",
+    "story_nav_prev": "Попередня",
+    "story_nav_next": "Наступна",
+    "story_back_to_list": "← Усі історії",
+    
+    "story_share_title": "Поділитися історією",
+    "story_share_subtitle": "Якщо вам відгукнулася ця історія — поділіться нею. Так більше людей дізнаються про Ігоря.",
+    "story_share_facebook": "Facebook",
+    "story_share_telegram": "Telegram",
+    "story_share_twitter": "X (Twitter)",
+    "story_share_whatsapp": "WhatsApp",
+    "story_share_viber": "Viber",
+    "story_share_linkedin": "LinkedIn",
+    "story_share_copy": "Скопіювати посилання",
+    "story_share_copied": "Скопійовано ✓",
+    "story_share_native": "Поділитися…"
   },
 
   "en": {
@@ -495,7 +522,33 @@
     "bio_ch5_p8": "In February 2022, Ihor made his choice and stood to defend what was most precious. Slon gave his life so that there would be victory, that Crimea would return, that freedom would endure, that Ukraine would thrive — and so that our lives could continue and be lived the way Ihor loved: with travel, football, sports, beloved friends, big plans, and even bigger dreams.",
 
     "bio_closing_thanks": "Thank you, Slon.",
-    "bio_closing_memory": "Eternal memory to the Hero."
+    "bio_closing_memory": "Eternal memory to the Hero.",
 
+    "menu_stories": "Stories",
+    "stories_kicker": "Memorial blog",
+    "stories_title": "Stories",
+    "stories_subtitle": "Memories, events, small and great stories about Ihor — from family, friends, and brothers in arms. Whenever we have something to add, a new entry appears.",
+    "stories_filter_all": "All",
+    "stories_filter_childhood": "Childhood",
+    "stories_filter_maidan": "Maidan",
+    "stories_filter_service": "Service",
+    "stories_filter_tribute": "Tribute",
+    "stories_read_more": "Read →",
+    "stories_empty": "No stories published yet. The first entries will appear soon.",
+    "story_nav_prev": "Previous",
+    "story_nav_next": "Next",
+    "story_back_to_list": "← All stories",
+
+    "story_share_title": "Share this story",
+    "story_share_subtitle": "If this story resonated with you — share it. More people will learn about Ihor.",
+    "story_share_facebook": "Facebook",
+    "story_share_telegram": "Telegram",
+    "story_share_twitter": "X (Twitter)",
+    "story_share_whatsapp": "WhatsApp",
+    "story_share_viber": "Viber",
+    "story_share_linkedin": "LinkedIn",
+    "story_share_copy": "Copy link",
+    "story_share_copied": "Copied ✓",
+    "story_share_native": "Share…"
   }
 }
