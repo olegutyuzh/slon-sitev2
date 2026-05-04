@@ -181,6 +181,19 @@
   display: block;
 }
 
+/* Вертикальне (портретне) фото — НЕ обрізаємо, центруємо в колонці */
+.bio-figure--portrait .bio-figure-img {
+  max-width: 420px;       /* портретне не повинне розтягуватись на всю ширину */
+  margin: 0 auto;
+  background: #050608;    /* без градієнту, щоб не світилось довкола */
+}
+
+.bio-figure--portrait .bio-figure-img img {
+  max-height: none;       /* знімаємо обмеження висоти */
+  height: auto;
+  object-fit: contain;    /* показуємо фото повністю, без обрізання */
+}
+
 .bio-figure-caption {
   margin-top: 14px;
   font-size: 13px;
