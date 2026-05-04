@@ -1657,3 +1657,32 @@ body::before {
     left: 12px !important;
   }
 }
+
+.link-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #e8d9b8;              /* теплий світлий, у тон до свічки */
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(232, 217, 184, 0.3);
+  transition: all 0.3s ease;
+}
+
+.link-more:hover {
+  color: #f5e6c0;
+  border-bottom-color: rgba(232, 217, 184, 0.8);
+  gap: 0.8em;                  /* стрілка трохи від'їжджає вправо */
+}
+
+.link-more::after {
+  content: '→';
+  transition: transform 0.3s ease;
+}
+
+.link-more:hover::after {
+  transform: translateX(3px);
+}

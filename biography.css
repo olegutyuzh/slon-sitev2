@@ -290,3 +290,32 @@
     line-height: 1.45;
   }
 }
+
+/* ===== BACK LINK ===== */
+.back-link-wrapper {
+  max-width: 760px;              /* збігається з bio-hero-inner і bio-chapter-inner */
+  margin: 0 auto;
+  padding: 32px 24px 0;          /* той самий горизонтальний padding, що в bio-hero */
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  font-size: 13px;                 /* у тоні з figure-caption (13px) і hero-kicker (12px) */
+  letter-spacing: 0.04em;          /* як у bio-hero-years */
+  color: #8a8a8a;                /* той самий приглушений сірий, що й у figure-caption */
+  text-decoration: none;
+  transition: color 0.25s ease, gap 0.25s ease;
+}
+
+.back-link:hover {
+  color: #C8A45A;                /* ваше золото на hover — теплий акцент */
+  gap: 0.7em;
+}
+
+@media (max-width: 720px) {
+  .back-link-wrapper {
+    padding: 24px 20px 0;
+  }
+}

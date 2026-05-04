@@ -13,12 +13,12 @@
   <link rel="alternate" hreflang="x-default" href="https://slon.life/biography.html" />
 
   <!-- Базові SEO -->
-  <title>Біографія — Ігор «Слон» Утюж</title>
+  <title>Життєпис — Ігор «Слон» Утюж</title>
   <link rel="canonical" href="https://slon.life/biography.html" />
 
   <!-- Open Graph -->
-  <meta name="description" content="Біографія Ігоря «Слона» Утюжа: від Революції Гідності до 78-го окремого десантно-штурмового полку. Текст-спогад, написаний на основі розповіді родини." />
-  <meta property="og:title" content="Біографія Ігоря «Слона» Утюжа">
+  <meta name="description" content="Життєпис Ігоря «Слона» Утюжа: від Революції Гідності до 78-го окремого десантно-штурмового полку. Текст-спогад, написаний на основі розповіді родини." />
+  <meta property="og:title" content="Життєпис Ігоря «Слона» Утюжа">
   <meta property="og:description" content="Шлях людини, яка двічі зробила вибір йти першою — у 17 років на Майдан, і у 25 — на повномасштабну війну.">
   <meta property="og:image" content="https://slon.life/img/og-cover.png" />
   <meta property="og:image:width" content="1200" />
@@ -26,10 +26,11 @@
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://slon.life/biography.html" />
   <meta property="og:locale" content="uk_UA" />
+  <meta property="og:see_also" content="https://slon.life/memories.html" />
 
   <!-- Twitter / X -->
   <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="Біографія Ігоря «Слона» Утюжа" />
+  <meta name="twitter:title"       content="Життєпис Ігоря «Слона» Утюжа" />
   <meta name="twitter:description" content="Шлях людини, яка двічі зробила вибір йти першою." />
   <meta name="twitter:image"       content="https://slon.life/img/og-cover.png" />
 </head>
@@ -53,7 +54,7 @@
         <a href="index.html#life" data-i18n="menu_life">Фрагменти життя</a>
         <a href="index.html#symbols" data-i18n="menu_symbols">Символіка</a>
         <a href="memories.html" data-i18n="menu_memories">Спогади</a>
-        <a href="biography.html" class="is-active" data-i18n="menu_biography">Біографія</a>
+        <a href="biography.html" class="is-active" data-i18n="menu_biography">Життєпис</a>
       </nav>
 
       <div class="header-lang">
@@ -64,9 +65,17 @@
     </div>
   </header>
 
+  <!-- ПЕРЕД bio-hero -->
+  <!-- <div class="back-link-wrapper"> -->
+    <a href="index.html" class="contact-back" data-i18n="back_to_home">
+      ← Повернутись на головну
+    </a>
+  <!-- </div> -->
+
   <!-- ===== BIO HERO ===== -->
   <section class="bio-hero">
     <div class="bio-hero-inner">
+
       <div class="bio-hero-kicker" data-i18n="bio_hero_kicker">Біографія</div>
       <h1 class="bio-hero-title" data-i18n="bio_hero_title">Пам'яті Ігоря Утюжа</h1>
       <div class="bio-hero-years" data-i18n="bio_hero_years">18.04.1996 — 07.12.2023</div>
@@ -95,7 +104,7 @@
         <!-- ===== ФОТО: ДИТИНСТВО / РАННІ РОКИ ===== -->
         <figure class="bio-figure">
           <div class="bio-figure-img">
-            <img src="img/bio/childhood.jpg" alt="Ігор у дитинстві / ранній юності" />
+            <img src="img/bio/sport.jpg" alt="Ігор у дитинстві / ранній юності" />
           </div>
           <figcaption class="bio-figure-caption" data-i18n="bio_ch1_photo_caption">Ігор у юні роки. Карате, гребля, академічна гра — у нього не було часу сидіти на місці.</figcaption>
         </figure>
@@ -139,7 +148,7 @@
   </section>
 
   <!-- ===== CHAPTER 2: ЯКЩО МЕНІ ВРЯТУВАЛИ ЖИТТЯ... ===== -->
-  <section class="section bio-chapter bio-chapter-alt">
+  <section id="war-path" class="section bio-chapter bio-chapter-alt">
     <div class="section-inner bio-chapter-inner">
 
       <div class="section-header">
