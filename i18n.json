@@ -4,7 +4,7 @@
     "hero_title": "Ігор «Слон» Утюж",
     "hero_years": "18.04.1996 — 07.12.2023",
     "hero_text": "Захисник України, боєць 78-го окремого десантно-штурмового полку, учасник Революції Гідності. Людина, яка двічі зробила вибір йти першим — у 17 років на Майдан, і у 25 — на повномасштабну війну.",
-    "hero_text_slogan": "«Якщо мені врятували життя — значить, я потрібен для чогось більшого»",
+    "hero_text_slogan": "<em>«Якщо мені врятували життя — значить, я потрібен для чогось більшого»</em>",
     "btn_warpath": "Його шлях",
     "btn_life": "Фрагменти життя",
 
@@ -27,7 +27,7 @@
     "about_block_text_childhood": "Ігор з дитинства був активним, енергійним і допитливим. Батьки згадують його як хлопця, який «завжди знаходив собі заняття» і мав природну наполегливість. Займався єдиноборствами, веслуванням, любив спорт і людей. Його вміння знаходити спільну мову було майже містичним — кілька слів, усмішка, і він уже «свій» серед нових людей.",
 
     "about_block_title_before_war": "Життя до війни",
-    "about_block_text_before_war": "До повномасштабного вторгнення Ігор жив звичайним життям молодої людини: навчання, друзі, подорожі, футбол, шахи, плани на майбутнє. Він любив своє місто, любив матчі національної збірної, любив прості радості. Мріяв колись поїхати в Африку — захищати слонів. Слони були його дитячою любов'ю, від якої згодом виріс і його позивний.",
+    "about_block_text_before_war": "До повномасштабного вторгнення Ігор жив звичайним життям молодої людини: навчання, друзі, подорожі, футбол, шахи, плани на майбутнє. Він любив своє місто, любив матчі національної збірної, любив прості радості. Мріяв колись поїхати в Африку — захищати слонів. Слони були його дитячою любовʼю, від якої згодом виріс і його позивний.",
 
     "about_block_title_beginning_service": "Революція Гідності",
     "about_block_text_beginning_service": "У 17 років Ігор зробив вибір, який визначив усе подальше життя. Він став частиною 24-ї сотні самооборони Майдану, чергував на барикадах, допомагав витягувати поранених. 18 лютого 2014 року в Маріїнському парку отримав важке поранення — частина черепа була роздроблена. Лікарі врятували йому життя. Тоді він сказав фразу, яка стала пророчою: «Якщо мені врятували життя — значить, я потрібен для чогось більшого».",
@@ -46,7 +46,7 @@
 
     "timeline_year_last_battle": "2022 — 2023",
     "timeline_title_last_battle": "Київщина, Харківщина, Південь",
-    "timeline_text_last_battle": "Брав участь у звільненні Київщини та Харківщини. Згодом — Запорізький та Херсонський напрямки. Працював на складних ділянках, підтримував побратимів, ніколи не залишав своїх. У грудні 2023 року, виконуючи бойове завдання, його позицію атакував ворожий ФПВ-дрон. Ігор загинув, прикривши собою побратимів — так samo, як жив: стоячи поруч, до кінця, без страху і без кроку назад.",
+    "timeline_text_last_battle": "Брав участь у звільненні Київщини та Харківщини. Згодом — Запорізький та Херсонський напрямки. Працював на складних ділянках, підтримував побратимів, ніколи не залишав своїх. У грудні 2023 року, виконуючи бойове завдання, його позицію атакував ворожий ФПВ-дрон. Ігор загинув, прикривши собою побратимів — так само, як жив: стоячи поруч, до кінця, без страху і без кроку назад.",
 
     "war_photo_caption_1": "З побратимами 78-го полку",
     "war_photo_caption_2": "Робота з дроном на передовій",
@@ -86,7 +86,7 @@
     "gratitude_quote_1": "Він був для нас Всесвітом. Справжній патріот, вірний друг і побратим, з великим серцем, відкритим для всіх. У будь-яких обставинах підбадьорював інших і повторював, що все буде добре. Так було і на Майдані, коли йому було 17. Так було і потім.",
     "gratitude_author_1": "— Мама",
 
-    "gratitude_quote_2": "Головним його бажанням була наша перемога. Після неї планував багато подорожувати — підлаштовуючи маршрути так, щоб встигати на футбольні матчі. Мріяв про будиночок у горах із неймовірними краєвидами і про доньку — обов'язково першу. У нього була мета створити благодійний фонд, який він би назвав «Білий Слон».",
+    "gratitude_quote_2": "Головним його бажанням була наша перемога. Після неї планував багато подорожувати — підлаштовуючи маршрути так, щоб встигати на футбольні матчі. Мріяв про будиночок у горах із неймовірними краєвидами і про доньку — обовʼязково першу. У нього була мета створити благодійний фонд, який він би назвав «Білий Слон».",
     "gratitude_author_2": "— Наречена",
 
     "gratitude_quote_3": "«Слон» завжди хотів бути попереду. Командир кликав його у штаб — він відмовлявся: «Я хочу заходити в міста і ставити прапори». Так і робив.",
@@ -95,44 +95,44 @@
     "gratitude_quote_4": "Людина, яка точно знала свої цінності й трималася їх. Кремезний, з широкими плечима, за які можна було сховатися. «Своя людина» з перших слів — і назавжди.",
     "gratitude_author_4": "— Друг",
 
-    "footer_left_text_1": "Сайт-пам'ять про Ігоря «Слона» Утюжа.",
+    "footer_left_text_1": "Сайт-памʼять про Ігоря «Слона» Утюжа.",
     "footer_left_text_2": "Створено родиною та друзями. 2024 — 2026.",
 
     "footer_right_text": "Мова",
 
-    "contact_success_title": "Дякуємо за ваші слова пам'яті",
-    "contact_success_text": "Ваші слова дуже важливі для нас. Вони  допомагають зберегти пам'ять про Ігоря та підтримують його родину і побратимів. Ваші слова збережемо. Найсильніші з них опублікуємо як частину сторінки памʼяті. Ще раз дякуємо за вашу підтримку і пам'ять." ,
+    "contact_success_title": "Дякуємо. Ваші слова з нами.",
+    "contact_success_text": "Ми прочитаємо їх уважно. Найближчим часом вони зʼявляться на сторінці спогадів — поруч зі словами рідних, побратимів і друзів. Це багато для нас означає.",
     "back_to_home": "Повернутися на головну",
 
     "memory_title": "Вшанувати пам’ять",
-    "memory_subtitle": "Якщо ви знали Ігоря або хочете залишити слова — зробіть це тут.",
+    "memory_subtitle": "Якщо ви знали Ігоря — або просто хочете щось сказати — це місце для цього.",
 
     "light_candle": "Запалити свічку",
     "leave_message": "Залишити слова",
-    "candle_text": "Світло пам'яті горить",
+    "candle_text": "Світло памʼяті горить",
 
     "contact_back": "← Повернутись на головну",
-    "contact_kicker": "Слова пам'яті",
+    "contact_kicker": "Слова памʼяті",
     "contact_title": "Залишити слова",
-    "contact_subtitle": "Поділіться спогадом, історією або просто словами підтримки. Ваші слова стануть частиною пам'яті про Ігоря.",
-    "contact_name_label": "Ваше ім'я",
+    "contact_subtitle": "Один спогад, одна історія, одне слово — усе важить. Те, що ви напишете, залишиться частиною памʼяті про нього.",
+    "contact_name_label": "Ваше імʼя",
     "contact_name_placeholder": "Як до вас звертатись",
     "contact_relation_placeholder": "Друг, побратим, родич, колега...",
     "contact_email_label": "Email",
     "contact_email_placeholder": "email@example.com",
     "contact_message_label": "Ваші слова",
     "contact_message_placeholder": "Спогад, історія, слова підтримки...",
-    "contact_optional": "(не обов'язково)",
+    "contact_optional": "(не обовʼязково)",
     "contact_submit": "Надіслати",
     "contact_cancel": "Скасувати",
     "contact_sending": "Надсилаємо...",
-    "contact_error": "Не вдалося надіслати повідомлення. Перевірте з'єднання та спробуйте ще раз.",
-    "contact_success": "Ваше повідомлення успішно надіслано. Дякуємо за вашу пам'ять і підтримку.",
+    "contact_error": "Не вдалося надіслати повідомлення. Перевірте зʼєднання та спробуйте ще раз.",
+    "contact_success": "Ваші слова отримано. Дякуємо.",
 
     "memories_back": "← Повернутись на головну",
     "memories_kicker": "Слова, які залишились",
     "memories_title": "Спогади про Ігоря",
-    "memories_subtitle": "Слова рідних, побратимів і друзів. Тут ми зберігаємо все, що про нього хочуть сказати.",
+    "memories_subtitle": "Голоси тих, хто його знав. Кожне слово — частина того, ким він був.",
 
     "memories_filter_all": "Усі",
     "memories_filter_family": "Родина",
@@ -140,11 +140,11 @@
     "memories_filter_friends": "Друзі",
     "memories_filter_other": "Інші",
 
-    "memories_empty": "У цій категорії поки немає спогадів.",
+    "memories_empty": "Тут ще немає слів. Можливо, ваші стануть першими.",
     "memories_error": "Не вдалося завантажити спогади. Спробуйте оновити сторінку.",
     "memories_load_more": "Показати ще",
 
-    "memories_cta_text": "Хочете додати свій спогад?",
+    "memories_cta_text": "Якщо ви знали Ігоря — поділіться тим, що памʼятаєте.",
     "memories_cta_button": "Залишити слова",
 
     "menu_memories": "Спогади",
@@ -157,7 +157,7 @@
     "contact_category_other": "Інше",
     
     "quotes_read_all": "Читати всі →",
-    "quotes_caption": "Кожен голос — частина пам'яті",
+    "quotes_caption": "Кожен голос — частина памʼяті",
   
     "candle_counter_line": "свічок памʼяті вже горить",
   
@@ -174,12 +174,12 @@
     "bio_hero_kicker": "Життєпис",
     "bio_hero_title": "Ігор «Слон» Утюж",
     "bio_hero_years": "18.04.1996 — 07.12.2023",
-    "bio_hero_lede": "Текст-спогад пам'яті військового Ігоря Утюжа, який загинув 7 грудня 2023 року. Матеріал написано на основі розповіді з родиною Ігоря: батьків — Олега й Ніни Утюж, а також нареченої — Євгенії Шклярук.",
+    "bio_hero_lede": "Текст-спогад памʼяті військового Ігоря Утюжа, який загинув 7 грудня 2023 року. Матеріал написано на основі розповіді з родиною Ігоря: батьків — Олега й Ніни Утюж, а також нареченої — Євгенії Шклярук.",
     "bio_btn_back": "← Повернутися на головну",
 
     "bio_ch1_kicker":"Розділ перший",
     "bio_ch1_title":"Своя людина",
-    "bio_ch1_p1":"У дитинстві Ігор був непосидючим та активним. Такий собі розбишака (у хорошому сенсі) із палаючими очима та вірою, що немає нічого неможливого. Він завжди шукав пригод і з юних років гартував характер — у розкладі з'являлися то карате, то джиу-джитсу, то академічна гребля.",
+    "bio_ch1_p1":"У дитинстві Ігор був непосидючим та активним. Такий собі розбишака (у хорошому сенсі) із палаючими очима та вірою, що немає нічого неможливого. Він завжди шукав пригод і з юних років гартував характер — у розкладі зʼявлялися то карате, то джиу-джитсу, то академічна гребля.",
     "bio_ch1_p2":"З віком до активності додався залізний характер та впертість. А ще — любов до людей. Ігоря можна неофіційно назвати майстром спорту з налагодження контактів. У його виконанні це було мистецтво: кілька слів, посмішка — і Ігор уже «своя людина», добрий товариш, з яким можна у вогонь і воду.",
     "bio_ch1_photo_caption": "Ігор у юні роки. Карате, гребля, академічна гра — у нього не було часу сидіти на місці.",
     "bio_ch1_p3": "Після школи Ігор самостійно вступив на бюджет у Київський політехнічний інститут. І саме на першому курсі, коли хлопцю було 17 років, стався переломний момент — розпочалася Революція Гідності. Вона сформувала Ігоря як громадянина країни, викристалізувала його ціннісні орієнтири.",
@@ -210,7 +210,7 @@
     "bio_ch3_p1": "За 3–4 місяці до повномасштабного вторгнення Ігор відчував наближення великої боротьби. І вже тоді знав, що ця боротьба буде його особистою. Тому ще восени 2021-го він сказав рідним: «Якщо це станеться, я буду там, я піду». Ігор не лишав простору для сумнівів чи вагань. Як і всі його рішення по життю, бажання захищати країну було непохитним.",
     "bio_ch3_p2": "Ігор зустрів новину про повномасштабне вторгнення росіян, святкуючи з дівчиною річницю знайомства у Будапешті. Ранок 24 лютого почався з двох фраз: <em>Війна почалася! Я повертаюся додому!</em>",
     "bio_ch3_pullquote":"Війна почалася! Я повертаюся додому!",
-    "bio_ch3_quote_zhenia":"Він обдзвонив понад 20 перевізників. Проте отримував лише відмови. Їхати в Україну ніхто не хотів. З кількома пересадками хлопець доїхав до українського кордону. А далі з Чопа вирушив потягом. Ігор був єдиним у порожньому вагоні. Вже по Україні пересувався до Києва автомобілем зі знайомими. На під'їзді до Києва вони потрапили під обстріл. Але впертий, продовжував свій шлях додому. Тероборона столиці довго обшукувала Ігоря — їм видався дивним хлопець, який їде назустріч багатотисячній колоні, що рухалася на Захід. Ми часто згадували той день і жартували про найдорожче таксі в його житті.",
+    "bio_ch3_quote_zhenia":"Він обдзвонив понад 20 перевізників. Проте отримував лише відмови. Їхати в Україну ніхто не хотів. З кількома пересадками хлопець доїхав до українського кордону. А далі з Чопа вирушив потягом. Ігор був єдиним у порожньому вагоні. Вже по Україні пересувався до Києва автомобілем зі знайомими. На підʼїзді до Києва вони потрапили під обстріл. Але впертий, продовжував свій шлях додому. Тероборона столиці довго обшукувала Ігоря — їм видався дивним хлопець, який їде назустріч багатотисячній колоні, що рухалася на Захід. Ми часто згадували той день і жартували про найдорожче таксі в його житті.",
     "bio_ch3_quote_zhenia_author":"— Євгенія, наречена",
     "bio_ch3_p3":"Перші два місяці у Ігоря була легенда: аби рідні не хвилювалися, він переконував їх, що волонтерить по місту, — хоча сам одразу ж долучився до оборони Києва у лавах АЛЬФИ. А з часом, після деокупації Київщини, Ігор став частиною 78-го окремого десантно-штурмового полку. Проте тривалий час — неофіційно. Певна бюрократія навіть в умовах повномасштабної війни гальмувала процес офіційного долучення хлопця до лав ДШВ.",
     "bio_ch3_quote_parents":"Бажання Ігоря стати на захист країни не могло змінити ніщо. Тривалий час він не був офіційно оформлений у війську, тож відповідно не отримував жодної заробітної плати, хоча був у гарячих точках. Хлопці з його підрозділу вирішили, що будуть скидатися Ігорю на хоч якусь мінімальну оплату. Йому було незручно. Ми страшенно хвилювалися. Але у нього завжди була одна непохитна відповідь — «Я хочу бути з хлопцями. Все». Гроші не були важливими. Як і офіційність питання. Це було щире бажання.",
@@ -223,16 +223,16 @@
     "bio_ch4_pullquote":"Тату, як виросту, поїду в Африку охороняти слонів. Їх так часто вбивають через бивні",
     "bio_ch4_p2":"Слони, до речі, належать до найрозумніших тварин. Їхньою унікальною відмінністю від багатьох інших ссавців є взаємодопомога: вони ніколи не кидають своїх і завжди тримаються групи. Ця риса була притаманна й Ігорю — не кинути своїх і триматися зграї, один за одного, у єдиному дусі. Друзі, побратими — це була друга родина, якою він пишався. На похорони Ігоря всі прийшли зі слонами: могила захисника була засипана кольоровими іграшками.",
     "bio_ch4_photo_caption":"«Слон» з побратимом. 78-й окремий десантно-штурмовий полк.",
-    "bio_ch4_p3":"Євгенія — кохана Ігоря — пригадує, що з часом війна і життя стали чимось єдиним. Ігор міг дзвонити просто з окопів, а її хвилювало, чому він без шапки чи без шолома. Такі прості прояви турботи й любові, за які трималися дві роз'єднані душі. І коли тут, у Києві, її серце стискалося від хвилювання, від Ігоря було переконливе «та не хвилюйся, від нас до них — 100 метрів, он аж де прилітає». У нього завжди все було «ок», він ніколи не скаржився, не шукав винних (крім росіян, звичайно), і виконував свою місію натхненно — навіть якщо йшлося про збір збитих дронів на мінному полі.",
+    "bio_ch4_p3":"Євгенія — кохана Ігоря — пригадує, що з часом війна і життя стали чимось єдиним. Ігор міг дзвонити просто з окопів, а її хвилювало, чому він без шапки чи без шолома. Такі прості прояви турботи й любові, за які трималися дві розʼєднані душі. І коли тут, у Києві, її серце стискалося від хвилювання, від Ігоря було переконливе «та не хвилюйся, від нас до них — 100 метрів, он аж де прилітає». У нього завжди все було «ок», він ніколи не скаржився, не шукав винних (крім росіян, звичайно), і виконував свою місію натхненно — навіть якщо йшлося про збір збитих дронів на мінному полі.",
     "bio_ch4_p4":"Останнє повідомлення, яке написав Ігор перед загибеллю, було впевненим і життєствердним: <em>«Ранок починається не з кави, а з мертвих орків…»</em>",
     "bio_ch4_p5":"Командир Ігоря хотів бачити його у штабі. Там, казав, потрібні його знання і навички. Але Ігор був непохитним, він хотів бути з хлопцями попереду:",
     "bio_ch4_pullquote_2":"Я хочу заходити в міста і ставити прапори. Я хочу бути там",
     "bio_ch4_p6":"Ігор намагався бути з родиною максимально легким, турботливим — кожним словом чи дією оберігаючи близьких від страшних реалій. Не дозволяв собі слабкостей, страху, бо розумів, що є опорою, що за нього тримаються ті, хто найбільше потребує захисту. Він відчував, що саме за його широкими плечима ховається ось той маленький затишний світ — родина.",
-    "bio_ch4_quote_dad":"У якийсь момент я відчув, що син став старшим у сім'ї. Його досвід, його рішення, характер. Я відчув у ньому силу, яка очолила нашу родину.",
+    "bio_ch4_quote_dad":"У якийсь момент я відчув, що син став старшим у сімʼї. Його досвід, його рішення, характер. Я відчув у ньому силу, яка очолила нашу родину.",
     "bio_ch4_quote_dad_author":"— Олег, тато Ігоря",
     "bio_ch4_p7":"Євгенія пригадує, що лише раз у житті бачила сльози Ігоря: він тоді саме повернувся у коротку відпустку до Києва, і ввечері, серед гамірного міста, яке продовжувало жити своїм, здавалося б, звичним життям, він розповідав про загиблих хлопців, своїх побратимів. Ті кілька сльозин не були проявом слабкості. Навпаки: вивільнити емоцію і показати, що справді на душі, — для Ігоря було сильним звершенням й одкровенням.",
   
-    "bio_ch5_kicker": "Розділ п'ятий",
+    "bio_ch5_kicker": "Розділ пʼятий",
     "bio_ch5_title":"«Я зроблю все, щоб вижити»",
     "bio_ch5_p1":"Ігор був упевнений у перемозі й чітко розумів, якою вона має бути — з деокупацією всіх українських територій та поверненням до кордонів України 2014 року, зі ще більшими зрушеннями суспільних настроїв у країні, з активною проєвропейською позицією.",
     "bio_ch5_p2": "Вірив у людей — бачив у них найкраще, але з нетерпимістю ставився до відсутності цінностей, хабарництва, безхарактерності. Він чітко знав, що в цьому житті чогось варте, а що — пил. Знав також, для чого він став захисником, за що бореться. Не боявся смерті, не боявся боїв. Боявся незвіданості полону, але казав:",
@@ -246,19 +246,19 @@
     "bio_ch5_p8":"У лютому 2022 року Ігор зробив вибір і став на захист найціннішого. Слон віддав життя за те, аби була перемога, був Крим, була свобода, була успішна Україна, і щоб наше з вами життя продовжувалося і було таким, як любив Ігор: із подорожами, футболом, спортивними змаганнями, улюбленими друзями, великими планами і ще більшими мріями.",
 
     "bio_closing_thanks": "Дякуємо, Слон.",
-    "bio_closing_memory": "Вічна пам'ять Герою.",
+    "bio_closing_memory": "Вічна памʼять Герою.",
 
     "menu_stories": "Історії",
-    "stories_kicker": "Блог пам'яті",
+    "stories_kicker": "Блог памʼяті",
     "stories_title": "Історії",
-    "stories_subtitle": "Спогади, події, маленькі та великі історії про Ігоря — від родини, друзів і побратимів. Щоразу, коли в нас є що додати, з'являється новий запис.",
+    "stories_subtitle": "Спогади, події, маленькі та великі історії про Ігоря — від родини, друзів і побратимів. Щоразу, коли в нас є що додати, зʼявляється новий запис.",
     "stories_filter_all": "Усі",
     "stories_filter_childhood": "Дитинство",
     "stories_filter_maidan": "Майдан",
     "stories_filter_service": "Служба",
     "stories_filter_tribute": "Вшанування",
     "stories_read_more": "Читати →",
-    "stories_empty": "Поки що немає опублікованих історій. Скоро з'являться перші записи.",
+    "stories_empty": "Поки що немає опублікованих історій. Скоро зʼявляться перші записи.",
     "story_nav_prev": "Попередня",
     "story_nav_next": "Наступна",
     "story_back_to_list": "← Усі історії",
@@ -280,8 +280,8 @@
     "hero_kicker": "Soldier, friend, son",
     "hero_title": "Ihor «Slon» Utyuzh",
     "hero_years": "18.04.1996 — 07.12.2023",
-    "hero_text": "Defender of Ukraine, soldier of the 78th Separate Air Assault Regiment, participant of the Revolution of Dignity. Born 27 years before he was killed defending Ukraine against Russia's full-scale invasion. Twice he chose to go: at 17, to the Maidan; at 25, to the war.",
-    "hero_text_slogan": "«If my life was saved, it means I'm needed for something greater»",
+    "hero_text": "Defender of Ukraine, soldier of the 78th Separate Air Assault Regiment, participant of the Revolution of Dignity. Born 27 years before he was killed defending Ukraine against Russiaʼs full-scale invasion. Twice he chose to go: at 17, to the Maidan; at 25, to the war.",
+    "hero_text_slogan": "<em>«If my life was saved, it means Iʼm needed for something greater»</em>",
     "btn_warpath": "His path",
     "btn_life": "Life moments",
 
@@ -307,11 +307,11 @@
     "about_block_text_before_war": "Before the full-scale invasion, Ihor lived an ordinary young life: studies, friends, travels, football, chess, plans for the future. He loved his city, the national football team, and small everyday joys. He once dreamed of going to Africa to protect elephants. That childhood love eventually grew into his callsign.",
 
     "about_block_title_beginning_service": "Revolution of Dignity",
-    "about_block_text_beginning_service": "At 17, Ihor made a choice that shaped everything that followed. He joined the 24th Self-Defense Sotnia of Maidan, stood on the barricades, and helped evacuate the wounded. On February 18, 2014, in Mariinsky Park, he was severely injured — part of his skull was shattered. Doctors saved his life. Later he said a phrase that became prophetic: «If my life was saved, it means I'm needed for something greater.»",
+    "about_block_text_beginning_service": "At 17, Ihor made a choice that shaped everything that followed. He joined the 24th Self-Defense Sotnia of Maidan, stood on the barricades, and helped evacuate the wounded. On February 18, 2014, in Mariinsky Park, he was severely injured — part of his skull was shattered. Doctors saved his life. Later he said a phrase that became prophetic: «If my life was saved, it means Iʼm needed for something greater.»",
 
     "section_kicker_warpath": "Service",
     "section_title_warpath": "War path",
-    "section_subtitle_warpath": "From Maidan to the 78th Separate Air Assault Regiment. The key milestones of Ihor's military journey.",
+    "section_subtitle_warpath": "From Maidan to the 78th Separate Air Assault Regiment. The key milestones of Ihorʼs military journey.",
 
     "timeline_year_volunteer_decision": "2014 — 2016",
     "timeline_title_volunteer_decision": "First war. ATO",
@@ -340,13 +340,13 @@
     "life_card_title_2": "Beloved",
     "life_card_text_2": "The one he returned for. The home that started with her.",
 
-    "life_card_quote_3": "«One day I'll go and protect the elephants»",
+    "life_card_quote_3": "«One day Iʼll go and protect the elephants»",
     "life_card_title_3": "Dreams",
     "life_card_text_3": "Africa, Crimea, his own charity foundation — the things he spoke about out loud.",
 
     "section_kicker_symbols": "Symbols",
     "section_title_symbols": "Symbols of his path",
-    "section_subtitle_symbols": "What embodies Ihor's character, his callsign, and what he stood for to the end.",
+    "section_subtitle_symbols": "What embodies Ihorʼs character, his callsign, and what he stood for to the end.",
 
     "symbol_title_slon": "Slon",
     "symbol_text_slon": "A callsign born of childhood love and turned into a sign of strength, endurance, and the ability to take a hit. «Slon» — the one who keeps moving when others stop.",
@@ -360,13 +360,13 @@
     "section_kicker_gratitude": "Remembrances",
     "section_title_gratitude": "Words that remain",
 
-    "gratitude_quote_1": "He was our entire universe. A true patriot, a loyal friend and brother-in-arms, with a big heart open to everyone. No matter the circumstances, he kept lifting others up, repeating that everything would be alright. That's how it was on the Maidan, when he was 17. And that's how it stayed.",
+    "gratitude_quote_1": "He was our entire universe. A true patriot, a loyal friend and brother-in-arms, with a big heart open to everyone. No matter the circumstances, he kept lifting others up, repeating that everything would be alright. Thatʼs how it was on the Maidan, when he was 17. And thatʼs how it stayed.",
     "gratitude_author_1": "— Mother",
 
-    "gratitude_quote_2": "His one wish was our victory. After that, he planned to travel — endlessly, always timing the trips around football matches. He dreamed of a little house in the mountains with breathtaking views, and of a daughter — the first child had to be a girl. And he wanted to start a charitable foundation. He'd already chosen the name — Bilyi Slon, the White Elephant — after his callsign.»",
+    "gratitude_quote_2": "His one wish was our victory. After that, he planned to travel — endlessly, always timing the trips around football matches. He dreamed of a little house in the mountains with breathtaking views, and of a daughter — the first child had to be a girl. And he wanted to start a charitable foundation. Heʼd already chosen the name — «Bilyi Slon», the White Elephant — after his callsign.",
     "gratitude_author_2": "— Fiancée",
 
-    "gratitude_quote_3": "«Slon» always wanted to be at the front. The commander kept asking him to come to headquarters — he refused: «I want to walk into cities and plant flags.» And that's exactly what he did.",
+    "gratitude_quote_3": "«Slon» always wanted to be at the front. The commander kept asking him to come to headquarters — he refused: «I want to walk into cities and plant flags.» And thatʼs exactly what he did.",
     "gratitude_author_3": "— Brother-in-arms, 78th Air Assault Regiment",    
 
     "gratitude_quote_4": "A man who knew exactly what he stood for, and stood by it. Broad-shouldered, the kind of person you could hide behind. He became «one of us» within the first few words — and stayed that way for good.",
@@ -377,12 +377,12 @@
 
     "footer_right_text": "Language",
 
-    "contact_success_title": "Thank you for your words of memory",
-    "contact_success_text": "Your words mean a great deal to us. They help preserve the memory of Ihor and support his family and comrades. We will keep your message. The most meaningful ones will be published as part of the memorial page. Thank you once again for your support and remembrance." ,
+    "contact_success_title": "Thank you. Your words are with us.",
+    "contact_success_text": "We will read them carefully. They will appear on the memories page soon — alongside the words of family, brothers-in-arms, and friends. It means a great deal to us.",
     "back_to_home": "Back to home",
 
     "memory_title": "Honor the memory",
-    "memory_subtitle": "If you knew Ihor or want to leave words — do it here.",
+    "memory_subtitle": "If you knew Ihor — or simply want to leave a word — this is the place.",
 
     "light_candle": "Light a candle",
     "leave_message": "Leave words",
@@ -391,7 +391,7 @@
     "contact_back": "← Back to home",
     "contact_kicker": "Words of memory",
     "contact_title": "Leave Words",
-    "contact_subtitle": "Share a memory, story, or simply words of support. Your words will become part of the legacy of Ihor.",
+    "contact_subtitle": "One memory, one story, one word — all of it matters. What you write will stay as a part of who he was.",
     "contact_name_label": "Your name",
     "contact_name_placeholder": "How should we address you",
     "contact_relation_placeholder": "Friend, brother-in-arms, relative, colleague...",
@@ -404,12 +404,12 @@
     "contact_cancel": "Cancel",
     "contact_sending": "Sending...",
     "contact_error": "Failed to send the message. Please check your connection and try again.",
-    "contact_success": "Your message has been successfully sent. Thank you for your memory and support.",
+    "contact_success": "Your words have been received. Thank you.",
 
     "memories_back": "← Back to home",
     "memories_kicker": "Words that remain",
     "memories_title": "Memories of Ihor",
-    "memories_subtitle": "Words from family, brothers-in-arms, and friends. Here we keep everything that is said about him.",
+    "memories_subtitle": "The voices of those who knew him. Every word is a part of who he was.",
 
     "memories_filter_all": "All",
     "memories_filter_family": "Family",
@@ -417,11 +417,11 @@
     "memories_filter_friends": "Friends",
     "memories_filter_other": "Others",
 
-    "memories_empty": "No memories in this category yet.",
+    "memories_empty": "No words here yet. Yours could be the first.",
     "memories_error": "Failed to load memories. Please try refreshing the page.",
     "memories_load_more": "Show more",
 
-    "memories_cta_text": "Would you like to share a memory?",
+    "memories_cta_text": "If you knew Ihor — share what you remember.",
     "memories_cta_button": "Leave words",
 
     "menu_memories": "Memories",
@@ -456,13 +456,13 @@
     "bio_ch1_kicker": "Chapter One",
     "bio_ch1_title": "One of Their Own",
     "bio_ch1_p1": "As a child, Ihor was restless and energetic — a bit of a rascal (in the best sense), with burning eyes and a belief that nothing was impossible. He was always looking for adventure, and from an early age he was shaping his character — karate, jiu-jitsu, and rowing appeared in his schedule one after another.",
-    "bio_ch1_p2": "With age, his energy was joined by a steely character and determination — and, above all, a love for people. Ihor could unofficially be called a master of building connections. For him, it was an art: a few words, a smile — and Ihor was already 'one of their own', a good friend you could trust in any situation.",
+    "bio_ch1_p2": "With age, his energy was joined by a steely character and determination — and, above all, a love for people. Ihor could unofficially be called a master of building connections. For him, it was an art: a few words, a smile — and Ihor was already ʼone of their ownʼ, a good friend you could trust in any situation.",
     "bio_ch1_photo_caption": "Ihor in his youth. Karate, rowing, academic training — he never had time to sit still.",
     "bio_ch1_p3": "After school, Ihor independently earned a state-funded place at Kyiv Polytechnic Institute. And it was during his first year, when he was just 17, that a turning point came — the Revolution of Dignity began. It shaped Ihor as a citizen and crystallized his values.",
     "bio_ch1_quote_mom": "They were drawn there. Sometimes they skipped classes, or went to Maidan right after them. And after the students were beaten, Ihor found his place there. At just 17, still essentially a child, he clearly understood that he wanted to live in a free, independent country moving toward Europe and rejecting any form of dictatorship.",
     "bio_ch1_quote_mom_author": "— Nina, Ihor’s mother",
-    "bio_ch1_p4": "Ihor served in the 24th Self-Defense Company of Maidan — and it was there that he first learned what it meant to fight for what was his. He wasn’t even 18 when the Revolution of Dignity became part of his life: he patrolled Maidan, stood on the barricades, took part in confrontations with 'titushky' and Berkut, and pulled people out of the hands of security forces who tried to seize them.",
-    "bio_ch1_quote_mom2": "They didn’t sleep for days, and if they managed to rest, it was right there — in tents by the fire or on the floor of the Kyiv City Administration building. They were still so young, yet they had to face heavily armed Berkut and trained 'titushky' with metal rods, while having no weapons or protective gear. All they had was their spirit, courage, and homemade Molotov cocktails. In the rare moments when Ihor came home, he arrived exhausted and completely black from smoke.",
+    "bio_ch1_p4": "Ihor served in the 24th Self-Defense Company of Maidan — and it was there that he first learned what it meant to fight for what was his. He wasn’t even 18 when the Revolution of Dignity became part of his life: he patrolled Maidan, stood on the barricades, took part in confrontations with ʼtitushkyʼ and Berkut, and pulled people out of the hands of security forces who tried to seize them.",
+    "bio_ch1_quote_mom2": "They didn’t sleep for days, and if they managed to rest, it was right there — in tents by the fire or on the floor of the Kyiv City Administration building. They were still so young, yet they had to face heavily armed Berkut and trained ʼtitushkyʼ with metal rods, while having no weapons or protective gear. All they had was their spirit, courage, and homemade Molotov cocktails. In the rare moments when Ihor came home, he arrived exhausted and completely black from smoke.",
     "bio_ch1_quote_mom2_author": "— Nina, Ihor’s mother",
     "bio_ch1_photo_maidan_caption": "Maidan, 2014. The 24th Self-Defense Company.",
     "bio_ch1_p5": "During the fierce days on Hrushevskoho Street, Ihor was on the front line — he received several injuries from rubber bullets and suffered gas poisoning. His parents recall those days with fear and pride: during the clashes on Hrushevskoho, a fire broke out in one of the shops. Ihor, on his own initiative, took a Ukrainian flag and went to negotiate with the security forces to let the fire trucks through. A ceasefire was declared on the barricades at that moment. Brave, persuasive, and still so young, Ihor returned with the flag in his hands, with the firefighters — and with his first victory.",
