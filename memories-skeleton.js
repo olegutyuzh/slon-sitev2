@@ -1,5 +1,9 @@
-// Прибирає скелетон, як тільки в #memoriesList з'являється перша справжня картка.
-// Працює незалежно від логіки memories.js — просто стежить за DOM.
+// Прибирає скелетон, як тільки в #memoriesList з'являється перша СПРАВЖНЯ картка спогаду.
+
+console.log('Skeleton script:', { 
+  skeleton: document.getElementById('memoriesSkeleton'),
+  list: document.getElementById('memoriesList')
+});
 
 (function () {
   const skeleton = document.getElementById('memoriesSkeleton');
@@ -15,17 +19,27 @@
     setTimeout(() => skeleton.remove(), 320);
   }
 
-  // Стежимо за появою дочірніх елементів у списку
+  // Перевіряємо: чи є в списку справжня картка спогаду?
+  function hasRealCards() {
+    return list.querySelector('.memory-card') !== null;
+  }
+
+  // Якщо картки вже встигли завантажитись до запуску цього скрипта
+  if (hasRealCards()) {
+    hideSkeleton();
+    return;
+  }
+
+  // Стежимо за появою саме .memory-card
   const observer = new MutationObserver(() => {
-    if (list.children.length > 0) {
+    if (hasRealCards()) {
       hideSkeleton();
       observer.disconnect();
     }
   });
-  observer.observe(list, { childList: true });
+  observer.observe(list, { childList: true, subtree: true });
 
-  // Запобіжник: якщо за 12 секунд нічого не завантажилось —
-  // ховаємо скелетон, щоб не лишався "висіти" нескінченно
+  // Запобіжник: 12 секунд
   setTimeout(() => {
     if (!removed) {
       hideSkeleton();

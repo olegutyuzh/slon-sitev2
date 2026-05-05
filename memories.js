@@ -179,6 +179,14 @@
   // -----------------------------
 
   async function init() {
+    const skeleton = document.getElementById("memoriesSkeleton");
+
+    function hideSkeleton() {
+      if (!skeleton) return;
+      skeleton.classList.add("is-hiding");
+      setTimeout(() => skeleton.remove(), 320);
+    }
+
     try {
       allMemories = await loadFromSupabase();
       updateCounts();
@@ -187,6 +195,8 @@
       console.error("[memories]", err);
       listEl.innerHTML = `<p class="memories-error">${escape(t("memories_error", "Не вдалося завантажити спогади. Спробуйте оновити сторінку."))}</p>`;
       loadMoreEl.hidden = true;
+    } finally {
+      hideSkeleton();
     }
 
     filterBtns.forEach(btn => btn.addEventListener("click", onFilterClick));
