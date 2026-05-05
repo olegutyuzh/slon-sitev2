@@ -1,0 +1,98 @@
+/* ===== ВТОРИННА НАВІГАЦІЯ (subnav) ===== */
+/* Тільки на index.html — смуга з якорями секцій. */
+
+.subnav {
+  position: fixed;
+  top: 60px;                                  /* під хедером */
+  left: 0;
+  right: 0;
+  z-index: 19;                                /* трохи нижче хедера (z=20) */
+  background: rgba(5, 6, 8, 0.78);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(200, 164, 90, 0.08);
+  padding: 10px 24px;
+}
+
+.subnav-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+.subnav a {
+  color: #B3B3B3;
+  opacity: 0.75;
+  transition: color 0.2s ease, opacity 0.2s ease;
+  position: relative;
+}
+
+.subnav a:hover {
+  color: #C8A45A;
+  opacity: 1;
+}
+
+.subnav a:focus-visible {
+  outline: 2px solid #C8A45A;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* На мобільному — горизонтальний скрол замість wrap. 
+   Так смуга залишається одним рядком, а користувач 
+   гортає її пальцем. */
+@media (max-width: 720px) {
+  .subnav {
+    padding: 8px 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;                    /* Firefox */
+  }
+  
+  .subnav::-webkit-scrollbar {
+    display: none;                            /* Chrome, Safari */
+  }
+  
+  .subnav-inner {
+    justify-content: flex-start;
+    padding: 0 18px;
+    gap: 20px;
+    width: max-content;                       /* потрібно для overflow */
+    min-width: 100%;                          /* щоб займав ширину контейнера */
+  }
+}
+
+
+/* ===== АКТИВНИЙ ПУНКТ ОСНОВНОГО МЕНЮ ===== */
+/* У вас вже є :hover з підкресленням. Тут робимо те саме 
+   для активної сторінки, щоб збігалось візуально. */
+
+.header-nav a.is-active {
+  color: #C8A45A;
+  opacity: 1;
+}
+
+.header-nav a.is-active::after {
+  width: 100%;                                /* підкреслення на всю ширину */
+  background: #C8A45A;
+  opacity: 0.7;
+}
+
+
+/* ===== ВІДСТУПИ ДЛЯ HERO НА ГОЛОВНІЙ ===== */
+/* Тільки на сторінках, де є subnav (index.html), 
+   треба збільшити верхній відступ, щоб контент не 
+   ховався під хедер+subnav. */
+
+body.has-subnav .hero {
+  padding-top: calc(120px + 44px);            /* було 120px, додаємо висоту subnav */
+}
+
+@media (max-width: 720px) {
+  body.has-subnav .hero {
+    padding-top: calc(96px + 40px);           /* мобільні значення */
+  }
+}
