@@ -42,4 +42,44 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://slon.life/contact.html" />
   </url>
 
+  <url>
+    <loc>https://slon.life/memories.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://slon.life/memories.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://slon.life/memories.html?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://slon.life/memories.html" />
+  </url>
+
+  <url>
+    <loc>https://slon.life/memories.html?lang=en</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://slon.life/memories.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://slon.life/memories.html?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://slon.life/memories.html" />
+  </url>
+
+  <url>
+    <loc>https://slon.life/biography.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://slon.life/biography.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://slon.life/biography.html?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://slon.life/biography.html" />
+  </url>
+
+  <url>
+    <loc>https://slon.life/biography.html?lang=en</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://slon.life/biography.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://slon.life/biography.html?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://slon.life/biography.html" />
+  </url>  
+
 </urlset>
