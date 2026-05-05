@@ -10,7 +10,9 @@
 //     уже проминув. Якщо ще не дійшов до жодної секції —
 //     активний перший пункт. У самому низу сторінки —
 //     активний останній.
-//  2. Якщо у меню є кнопка #bottomNavCandle і на сторінці
+//  2. Підсвічення пунктів, що ведуть на інші сторінки
+//     (наприклад "Життєпис" на biography.html).
+//  3. Якщо у меню є кнопка #bottomNavCandle і на сторінці
 //     існує #lightCandleBtn — клік по кнопці в меню
 //     викликає клік по основній кнопці запалювання свічки.
 //
@@ -21,12 +23,30 @@
   const bottomNav = document.querySelector(".bottom-nav");
   if (!bottomNav) return;
 
-  // Беремо лише пункти-посилання з якорями на цій же сторінці
+  // Скидаємо всі активні стани — клас має проставлятися тільки скриптом
+  bottomNav.querySelectorAll('.bottom-nav-item.is-active').forEach(el => {
+    el.classList.remove('is-active');
+  });
+
+  // --- Підсвічення пунктів, що ведуть на інші сторінки ---
+  // (наприклад "Життєпис" на biography.html, "Спогади" на memories.html)
+  const currentPage = location.pathname.split('/').pop() || 'index.html';
+  bottomNav.querySelectorAll('a.bottom-nav-item').forEach(link => {
+    const href = link.getAttribute('href') || '';
+    // Пропускаємо якоря — їх обробляє основна логіка нижче
+    if (href.startsWith('#')) return;
+    // Виділяємо саме файл, ігноруючи якір (на випадок biography.html#top тощо)
+    const linkPage = href.split('#')[0];
+    if (linkPage === currentPage) {
+      link.classList.add('is-active');
+    }
+  });
+
+  // --- Залипаюча підсвітка під час скролу (для якорів на index.html) ---
   const navLinks = Array.from(
     bottomNav.querySelectorAll('a.bottom-nav-item[href^="#"]')
   );
 
-  // Порядок секцій по сторінці (зверху вниз)
   const sections = navLinks
     .map(link => document.querySelector(link.getAttribute("href")))
     .filter(Boolean);
@@ -38,10 +58,10 @@
     });
   }
 
-  // "Залипаюча" логіка — підсвічуємо останню секцію,
-  // верх якої користувач уже проминув (з невеликим зсувом).
   function updateActiveByScroll() {
-    const offset = 120; // приблизна висота хедера + трохи запасу
+    if (!sections.length) return;
+
+    const offset = 120;
     let activeId = null;
 
     for (const section of sections) {
@@ -53,9 +73,7 @@
       }
     }
 
-    // Якщо ще не дійшли до жодної секції — активуємо перший пункт.
-    // Якщо доскролили до самого низу сторінки — підсвічуємо останній.
-    if (!activeId && sections.length) {
+    if (!activeId) {
       const nearBottom =
         window.innerHeight + window.scrollY >=
         document.documentElement.scrollHeight - 50;
@@ -67,7 +85,6 @@
     if (activeId) setActive(activeId);
   }
 
-  // Throttle через requestAnimationFrame
   let ticking = false;
   function onScroll() {
     if (ticking) return;
@@ -80,11 +97,9 @@
 
   window.addEventListener("scroll", onScroll, { passive: true });
   window.addEventListener("resize", updateActiveByScroll);
-  // Запускаємо одразу — щоб активний пункт був видимий уже на завантаженні
   updateActiveByScroll();
 
-  // Кнопка свічки в нижній навігації — викликає ту саму логіку,
-  // що й основна кнопка запалювання свічки на сторінці
+  // --- Кнопка свічки в нижньому меню ---
   const bottomCandleBtn = document.getElementById("bottomNavCandle");
   const mainCandleBtn = document.getElementById("lightCandleBtn");
   if (bottomCandleBtn && mainCandleBtn) {

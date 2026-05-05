@@ -1,0 +1,9 @@
+.header-nav a.is-active {
+  opacity: 1;
+  color: #C8A45A;
+}
+
+.header-nav a.is-active::after {
+  width: 100%;
+  background: #C8A45A;
+}
