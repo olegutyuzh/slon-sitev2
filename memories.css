@@ -197,3 +197,79 @@
     padding: 6px 12px;
   }
 }
+
+/* ===== СКЕЛЕТОН ДЛЯ СПОГАДІВ ===== */
+
+.memories-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skeleton-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 24px 28px;
+}
+
+.skeleton-line {
+  height: 12px;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.04) 0%,
+    rgba(200, 164, 90, 0.10) 50%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
+  background-size: 200% 100%;
+  animation: skeletonShimmer 1.6s ease-in-out infinite;
+  margin-bottom: 10px;
+}
+
+.skeleton-line.is-mark {
+  width: 24px;
+  height: 28px;
+  margin-bottom: 14px;
+}
+
+.skeleton-line.is-short  { width: 60%; }
+.skeleton-line.is-medium { width: 85%; }
+.skeleton-line.is-long   { width: 95%; }
+
+.skeleton-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 14px;
+  margin-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.skeleton-meta .skeleton-line {
+  margin-bottom: 0;
+  height: 10px;
+}
+
+.skeleton-meta .skeleton-line:first-child { width: 30%; }
+.skeleton-meta .skeleton-line:last-child  { width: 20%; }
+
+@keyframes skeletonShimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Плавне зникнення скелетону */
+.memories-skeleton.is-hiding {
+  animation: skeletonFadeOut 0.3s ease forwards;
+}
+
+@keyframes skeletonFadeOut {
+  to { opacity: 0; transform: translateY(-4px); }
+}
+
+@media (max-width: 640px) {
+  .skeleton-card {
+    padding: 20px 20px;
+  }
+}
