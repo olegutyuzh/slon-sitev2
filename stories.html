@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="/blog.css" />
   <link rel="stylesheet" href="/voices.css" />
   <link rel="stylesheet" href="/share.css" />
-  <link rel="stylesheet" href="bottom_menu.css" />    
+  <link rel="stylesheet" href="/bottom_menu.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap&subset=cyrillic">
 
   <title>Історії — Ігор «Слон» Утюж</title>
+
   <meta name="description" content="Спогади та події про Ігоря «Слона» Утюжа — від родини, друзів і побратимів." />
   <link rel="canonical" href="https://slon.life/stories.html" />
 
@@ -39,10 +40,10 @@
       </a>
 
       <nav class="header-nav" aria-label="Основна навігація">
-        <a href="memories.html" data-i18n="menu_memories">Спогади</a>
-        <a href="stories.html" class="is-active" aria-current="page" data-i18n="menu_stories">Історії</a>
-        <a href="biography.html" data-i18n="menu_biography">Життєпис</a>
-      </nav>  
+        <a href="/memories.html" data-i18n="menu_memories">Спогади</a>
+        <a href="/stories.html" data-i18n="menu_stories" class="is-active" aria-current="page">Історії</a>
+        <a href="/biography.html" data-i18n="menu_biography">Життєпис</a>
+      </nav>
 
       <div class="header-lang">
         <button type="button" data-lang="uk" class="is-active">UA</button>
@@ -162,6 +163,47 @@
         </div>
       </article>
       
+      <article class="story-card" data-category="tribute">
+
+        
+        <a href="/stories/conсert-zhadana.html" class="story-card-photo">
+          <img src="/img/stories/memorial_plaque.png" alt="Концерт, на який Ігор таки потрапив" loading="lazy" />
+        </a>
+        
+
+        <div class="story-card-body">
+          <div class="story-card-meta">
+            <span class="story-card-category" data-i18n="stories_filter_tribute">Вшанування</span>
+            <span class="story-card-date">
+              <span data-lang-content="uk">7 лютого 2024</span>
+              <span data-lang-content="en">February 7, 2024</span>
+            </span>
+          </div>
+
+          <h2 class="story-card-title">
+            <a href="/stories/conсert-zhadana.html">
+              <span data-lang-content="uk">Концерт, на який Ігор таки потрапив</span>
+              <span data-lang-content="en">The concert Igor finally made it to</span>
+            </a>
+          </h2>
+
+          
+          <p class="story-card-lede">
+            <span data-lang-content="uk">Ігор таки потрапив на концерт «Жадан та Собаки» — його фото стояло на сцені поруч із улюбленим гуртом. Пісню «Троєщина» вони виконали для нього та всіх полеглих захисників.</span>
+            <span data-lang-content="en">Igor still made it to the “Zhadan and the Dogs” concert — his photo stood on the stage beside the band he loved. They dedicated “Troieshchyna” to him and to all fallen defenders.</span>
+          </p>
+          
+
+          
+          <div class="story-card-author">
+            — <span data-lang-content="uk">Ніна, мати</span><span data-lang-content="en">Nina, mother</span>
+          </div>
+          
+
+          <a href="/stories/conсert-zhadana.html" class="story-card-more" data-i18n="stories_read_more">Читати →</a>
+        </div>
+      </article>
+      
 
       
     </div>
@@ -221,9 +263,9 @@
     </div>
   </footer>
 
-  <!-- ===== НИЖНЯ МОБІЛЬНА НАВІГАЦІЯ ===== -->
+  
   <nav class="bottom-nav" aria-label="Мобільна навігація">
-    <a href="index.html" class="bottom-nav-item">
+    <a href="/index.html" class="bottom-nav-item">
       <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="M4 11c0-3.3 2.7-6 6-6h3c3.3 0 6 2.7 6 6v4"/>
         <path d="M4 11v6"/>
@@ -233,27 +275,27 @@
         <path d="M10 11c0 1.5 1 2.5 2 3v4"/>
         <path d="M12 18l-1 1"/>
         <circle cx="8" cy="9" r="0.5" fill="currentColor"/>
-      </svg>      
+      </svg>
       <span class="bottom-nav-label" data-i18n="menu_home">Головна</span>
     </a>
-    
-    <a href="memories.html" class="bottom-nav-item">
+
+    <a href="/memories.html" class="bottom-nav-item">
       <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-      </svg>      
+      </svg>
       <span class="bottom-nav-label" data-i18n="menu_memories">Спогади</span>
     </a>
-    
-    <a href="stories.html" class="bottom-nav-item is-active" aria-current="page">
-    <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <path d="M2 6c2-1 5-1.5 8 0v13c-3-1.5-6-1-8 0z"/>
-      <path d="M22 6c-2-1-5-1.5-8 0v13c3-1.5 6-1 8 0z"/>
-      <path d="M10 6v13"/>
-    </svg>
+
+    <a href="/stories.html" class="bottom-nav-item is-active" aria-current="page">
+      <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M2 6c2-1 5-1.5 8 0v13c-3-1.5-6-1-8 0z"/>
+        <path d="M22 6c-2-1-5-1.5-8 0v13c3-1.5 6-1 8 0z"/>
+        <path d="M10 6v13"/>
+      </svg>
       <span class="bottom-nav-label" data-i18n="menu_stories">Історії</span>
     </a>
-    
-    <a href="biography.html" class="bottom-nav-item">
+
+    <a href="/biography.html" class="bottom-nav-item">
       <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="M4 4h12a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3V4z"/>
         <path d="M4 17a3 3 0 0 1 3-3h12"/>
@@ -261,8 +303,7 @@
       </svg>
       <span class="bottom-nav-label" data-i18n="menu_biography">Життєпис</span>
     </a>
-  </nav>  
-
+  </nav>
   <script src="/lang.js"></script>
   <script src="/share.js"></script> 
 </body>
