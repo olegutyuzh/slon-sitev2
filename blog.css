@@ -367,3 +367,41 @@
   font-style: italic;
   text-align: left;
 }
+
+.story-video {
+  width: 100%;
+  max-width: 800px;
+  margin: 32px auto;
+  display: block;
+}
+
+/* ===== ВІДЕО — адаптивний контейнер 16:9 ===== */
+.story-figure--video {
+  margin: 2rem 0;
+}
+
+.story-figure--video .story-figure-video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.story-figure--video .story-figure-video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Вертикальне відео — 9:16 (як TikTok / Instagram Reels) */
+.story-figure--video.story-figure--portrait .story-figure-video-wrap {
+  aspect-ratio: 9 / 16;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
