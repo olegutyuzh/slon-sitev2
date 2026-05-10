@@ -123,6 +123,18 @@ a {
   width: 100%;
 }
 
+/* ===== Активний пункт навігації ===== */
+.header-nav a.is-active,
+.header-nav a[aria-current="page"] {
+  opacity: 1;
+  color: #C8A45A;
+}
+
+.header-nav a.is-active::after,
+.header-nav a[aria-current="page"]::after {
+  width: 100%;
+}
+
 .header-lang {
   display: flex;
   align-items: center;
