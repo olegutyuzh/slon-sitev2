@@ -1660,11 +1660,11 @@ body::before {
     transform: scale(0.94);
   }
 
-  .bottom-nav-item.is-active {
+  .bottom-nav-item[aria-current="page"] {
     color: #C8A45A;
   }
 
-  .bottom-nav-item.is-active::before {
+  .bottom-nav-item[aria-current="page"]::before {
     content: "";
     position: absolute;
     top: 0;
