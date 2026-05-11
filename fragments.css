@@ -87,12 +87,36 @@
   padding: 8px 4px;
 }
 
+/* Категорія у стилі pill (як фільтри на memories.html) */
 .life-fragment-category {
-  font-size: 12px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border: 1px solid #C8A45A;              /* було rgba(200, 164, 90, 0.5) */
+  border-radius: 999px;
+  background: rgba(200, 164, 90, 0.08);   /* було rgba(11, 12, 16, 0.6) */
+  margin-bottom: 20px;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+
+.life-fragment-category-label {
   color: #C8A45A;
-  margin-bottom: 12px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+.life-fragment-category-count {
+  color: #C8A45A;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.life-fragment-card-author {
+  font-size: 14px;
+  color: #C8A45A;
 }
 
 .life-fragment-quote {
@@ -114,7 +138,7 @@
 .life-fragment-attribution {
   font-size: 12px;
   letter-spacing: 0.04em;
-  color: #B3B3B3;
+  color: #C8A45A;
 }
 
 /* Сітка мініатюр */
