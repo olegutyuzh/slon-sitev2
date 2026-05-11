@@ -90,6 +90,7 @@
   line-height: 1;
   color: rgba(200, 164, 90, 0.12);
   pointer-events: none;
+  -webkit-user-select: none;  
   user-select: none;
   margin: 0;
 }

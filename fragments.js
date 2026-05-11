@@ -96,3 +96,73 @@
     else next();
   }, { passive: true });
 })();
+
+/* ===== Dots-індикатор для life-fragment-thumbs ===== */
+(function () {
+  function initDots(fragment) {
+    const thumbs = fragment.querySelector('.life-fragment-thumbs');
+    const dotsBox = fragment.querySelector('.life-fragment-dots');
+    if (!thumbs || !dotsBox) return;
+
+    const items = Array.from(thumbs.querySelectorAll('.life-fragment-thumb'));
+    if (!items.length) return;
+
+    // 1. Створюємо точки
+    dotsBox.innerHTML = '';
+    const dots = items.map(function (_, i) {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'life-fragment-dot';
+      dot.setAttribute('aria-label', 'Фото ' + (i + 1));
+      dot.addEventListener('click', function () {
+        items[i].scrollIntoView({
+          behavior: 'smooth',
+          inline: 'start',
+          block: 'nearest'
+        });
+      });
+      dotsBox.appendChild(dot);
+      return dot;
+    });
+
+    dots[0].classList.add('is-active');
+
+    // 2. Стежимо, яка мініатюра найбільш видима
+    const observer = new IntersectionObserver(
+      function (entries) {
+        let best = null;
+        entries.forEach(function (entry) {
+          if (!best || entry.intersectionRatio > best.intersectionRatio) {
+            best = entry;
+          }
+        });
+        if (best && best.isIntersecting) {
+          const idx = items.indexOf(best.target);
+          if (idx >= 0) {
+            dots.forEach(function (d, i) {
+              d.classList.toggle('is-active', i === idx);
+            });
+          }
+        }
+      },
+      {
+        root: thumbs,
+        threshold: [0.5, 0.75, 1]
+      }
+    );
+
+    items.forEach(function (item) {
+      observer.observe(item);
+    });
+  }
+
+  function init() {
+    document.querySelectorAll('.life-fragment').forEach(initDots);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
