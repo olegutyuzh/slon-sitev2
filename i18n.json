@@ -274,7 +274,19 @@
     "story_share_linkedin": "LinkedIn",
     "story_share_copy": "Скопіювати посилання",
     "story_share_copied": "Скопійовано ✓",
-    "story_share_native": "Поділитися…"
+    "story_share_native": "Поділитися…",
+
+    "life-hero-title": "Те, що він любив, і ті, кого любив він",
+    "life-hero-lead": "Кадри з життя Ігоря — родина, кохана, мрії. Те, чим жив до того, як удруге зробив вибір йти першим.",
+    "family_card_quote_1": "«Літо 2018. Вдома з батьками.»",
+    "life-fragment-category": "Родина",
+    "life-fragment-quote": "«Жив так, ніби кожен день важливий»",
+    "life-fragment-body": "Дім, у якому виріс. Місто, яке він любив. Він завжди повертався — з тренувань, з фронту, з закордонних поїздок. Завжди казав, що приїде на вихідні.",
+    "life-fragment-attribution": "— Мама",
+    "family_card_quote_2": "«Тренування з веслування»",
+    "family_card_quote_3": "«Київ, рідний район»",
+    "family_card_quote_4": "«Сімейне свято»",        
+    "family_card_quote_5": "«З батьком на риболовлі.»"
   },
 
   "en": {
@@ -551,6 +563,18 @@
     "story_share_linkedin": "LinkedIn",
     "story_share_copy": "Copy link",
     "story_share_copied": "Copied ✓",
-    "story_share_native": "Share…"
+    "story_share_native": "Share…",
+
+    "life-hero-title": "What he loved, and those he loved",
+    "life-hero-lead": "Moments from Ihor’s life — his family, his beloved, his dreams. What he lived for before he chose, once again, to be the first to step forward.",
+    "family_card_quote_1": "“Summer 2018. At home with his parents.”",
+    "life-fragment-category": "Family",
+    "life-fragment-quote": "“He lived as if every day mattered.”",
+    "life-fragment-body": "The home where he grew up. The city he loved. He always returned — from training, from the front, from trips abroad. He always said he’d come home for the weekend.",
+    "life-fragment-attribution": "— Mother",
+    "family_card_quote_2": "“Rowing practice”",
+    "family_card_quote_3": "“Kyiv, his home district”",
+    "family_card_quote_4": "“Family celebration”",
+    "family_card_quote_5": "“Fishing with his father.”"  
   }
 }
