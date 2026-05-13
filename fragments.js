@@ -7,7 +7,7 @@
     if (!galleries[name]) galleries[name] = [];
     galleries[name].push({
       src: el.getAttribute('href'),
-      caption: el.getAttribute('data-caption') || '',
+      captionKey: el.getAttribute('data-caption-key') || '',
       alt: el.querySelector('img') ? el.querySelector('img').alt : ''
     });
   });
@@ -41,7 +41,27 @@
     const item = currentGallery[currentIndex];
     imgEl.src = item.src;
     imgEl.alt = item.alt;
-    capEl.textContent = item.caption;
+
+    if (item.captionKey) {
+      // Ставимо data-i18n на елемент підпису — далі lang.js підхоплює сам
+      capEl.setAttribute('data-i18n', item.captionKey);
+
+      const lang = document.documentElement.getAttribute('lang') || 'uk';
+      const dict = (window.translationsCache && window.translationsCache[lang]) || {};
+      const translated = dict[item.captionKey];
+
+      if (translated === undefined) {
+        console.warn('[lightbox] No translation for key:', item.captionKey,
+                     '| cache loaded:', !!window.translationsCache,
+                     '| lang:', lang);
+      }
+      // Якщо перекладу нема — показуємо сам ключ як заглушку (видно проблему)
+      capEl.textContent = translated || item.captionKey;
+    } else {
+      console.warn('[lightbox] No data-caption-key on this trigger');
+      capEl.removeAttribute('data-i18n');
+      capEl.textContent = '';
+    }
 
     const single = currentGallery.length <= 1;
     prevBt.style.display = single ? 'none' : '';
