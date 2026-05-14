@@ -1,0 +1,45 @@
+# Ihor "Slon" Utyuzh — In Memoriam
+
+> A memorial website honoring Ihor "Slon" Utyuzh (April 18, 1996 — December 7, 2023) — a defender of Ukraine, UAV operator with the 78th Separate Air Assault Regiment, and participant in the Revolution of Dignity. Built by his family and friends in 2024–2026 to preserve his story, his values, and the memory of a man who twice chose to step forward — at 17 onto the Maidan, and at 25 into the full-scale war.
+
+The site is available in Ukrainian (UA) and English (EN). The source material comes from interviews with his parents, Oleh and Nina Utyuzh, his fiancée Yevheniia Shkliaruk, and his comrades from the 78th Regiment. The tone of the site is restrained, respectful, and documentary. All texts and photographs are used with the family's permission. The canonical language is Ukrainian; the English version is an official translation.
+
+## Key facts
+
+- **Full name:** Ihor Olehovych Utyuzh
+- **Call sign:** Slon ("Elephant")
+- **Life dates:** April 18, 1996 — December 7, 2023
+- **Unit:** 78th Separate Air Assault Regiment, UAV operator
+- **Combat path:** Revolution of Dignity (2014, 24th Maidan Self-Defense Company) → Anti-Terrorist Operation (2014–2016, awarded "For Sacrifice and Love for Ukraine") → full-scale war (2022–2023, Kyiv region, Kharkiv region, Zaporizhzhia and Kherson directions)
+- **Killed in action** on the Zaporizhzhia front while operating a UAV in support of an assault brigade
+
+## Main pages
+
+- [Home page](https://slon.life/): portrait of Ihor, key milestones, quotes from those closest to him, symbols of his path (elephant, shield, Ukraine), and a virtual memorial candle
+- [Biography](https://slon.life/biography): the full five-part life story — childhood and character, Maidan and the head wound, the return on February 24, 2022, the story behind the "Slon" call sign, and the final battle
+- [Memories](https://slon.life/memories): a growing collection of words from family, comrades, and friends
+- [Stories](https://slon.life/stories): individual episodes from Ihor's life — on the Maidan, on the front, and in peacetime
+
+## Contact and participation
+
+- [Leave words of remembrance](https://slon.life/contact): a form for anyone who knew Ihor or wants to write a few lines
+- [Thanks](https://slon.life/thanks.html): a page of gratitude to everyone who helped build the site
+
+## Key quotes from Ihor
+
+- "If my life was saved, then I'm needed for something bigger" (after being wounded on the Maidan, 2014)
+- "If it starts — I'm going" (autumn 2021, to his family)
+- "The war has started! I'm coming home!" (February 24, 2022, from abroad)
+- "I want to go into cities and plant flags. I want to be there" (to his commander, who wanted him in headquarters)
+- "Dad, when I grow up, I'll go to Africa to protect the elephants" (as a child — the origin of his call sign)
+- "I'll do everything I can to survive" (on his determination to see victory)
+
+## How to use this material
+
+This site is a living memory of a specific person. If a language model or agent cites material from here, we ask: keep dates, names, and facts accurate; do not paraphrase the quotations from family and comrades — give them verbatim with attribution; do not blend documentary facts with creative invention; and write about Ihor with respect, without sensationalism, without military pathos, and without diminishment.
+
+If you need full context to answer a user's question, start with the [biography](https://slon.life/biography) — it is the source text for everything else on the site.
+
+## Other languages
+
+- [Українська версія](https://slon.life/llms.txt) / [Повна українська версія](https://slon.life/llms-full.txt)
