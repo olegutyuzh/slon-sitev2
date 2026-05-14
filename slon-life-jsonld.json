@@ -1,0 +1,146 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://slon.life/#website",
+      "url": "https://slon.life/",
+      "name": "SLON — In Memoriam",
+      "alternateName": "Ігор «Слон» Утюж — Меморіальний сайт",
+      "description": "Меморіальна сторінка, присвячена Ігорю «Слону» Утюжу — захиснику України, бійцю 78-го окремого десантно-штурмового полку. 18.04.1996 — 07.12.2023.",
+      "inLanguage": ["uk-UA", "en"],
+      "publisher": {
+        "@id": "https://slon.life/#publisher"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://slon.life/#publisher",
+      "name": "Родина та друзі Ігоря Утюжа",
+      "url": "https://slon.life/",
+      "description": "Сайт-пам'ять, створений родиною та друзями. 2024 — 2026."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://slon.life/#webpage",
+      "url": "https://slon.life/",
+      "name": "Ігор «Слон» Утюж — In Memoriam",
+      "description": "Вшанування життя, сили та спадку Ігоря Утюжа. Його цінності, мужність і пам'ять продовжують надихати всіх, хто його знав.",
+      "isPartOf": { "@id": "https://slon.life/#website" },
+      "inLanguage": "uk-UA",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://slon.life/img/og-cover.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "about": { "@id": "https://slon.life/#person" },
+      "mainEntity": { "@id": "https://slon.life/#person" },
+      "breadcrumb": { "@id": "https://slon.life/#breadcrumb" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://slon.life/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Головна",
+          "item": "https://slon.life/"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://slon.life/#person",
+      "name": "Ігор Утюж",
+      "alternateName": "Слон",
+      "givenName": "Ігор",
+      "familyName": "Утюж",
+      "additionalName": "Слон",
+      "gender": "Male",
+      "nationality": {
+        "@type": "Country",
+        "name": "Україна"
+      },
+      "birthDate": "1996-04-18",
+      "deathDate": "2023-12-07",
+      "description": "Захисник України, боєць 78-го окремого десантно-штурмового полку, учасник Революції Гідності. Оператор БПЛА. Загинув 7 грудня 2023 року, виконуючи бойове завдання, прикривши собою побратимів.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://slon.life/img/hero-portrait.jpg",
+        "caption": "Ігор Утюж, портрет"
+      },
+      "url": "https://slon.life/",
+      "sameAs": "https://slon.life/biography.html",
+      "knowsAbout": [
+        "Революція Гідності",
+        "Майдан",
+        "24-та сотня самооборони Майдану",
+        "Антитерористична операція",
+        "78-й окремий десантно-штурмовий полк",
+        "Оператор БПЛА"
+      ],
+      "award": "Медаль «За жертовність і любов до України»",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "78-й окремий десантно-штурмовий полк ДШВ ЗСУ"
+      }
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://slon.life/#about",
+      "url": "https://slon.life/#about",
+      "name": "Про Ігоря",
+      "isPartOf": { "@id": "https://slon.life/#webpage" },
+      "about": { "@id": "https://slon.life/#person" }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://slon.life/#war-path",
+      "name": "Шлях воїна",
+      "description": "Від Майдану до 78-го окремого десантно-штурмового полку. Ключові віхи військового шляху Ігоря.",
+      "itemListOrder": "https://schema.org/ItemListOrderAscending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Революція Гідності",
+          "description": "У 17 років став частиною 24-ї сотні самооборони Майдану. 18 лютого 2014 року в Маріїнському парку отримав важке поранення черепа."
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "АТО (2014—2016)",
+          "description": "Після реабілітації приєднався до Антитерористичної операції. Отримав медаль «За жертовність і любов до України»."
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Повернення (24.02.2022)",
+          "description": "З початком повномасштабного вторгнення повернувся в Україну з-за кордону. Записався у 78-й окремий десантно-штурмовий полк. Став оператором БПЛА."
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Київщина, Харківщина, Південь (2022—2023)",
+          "description": "Брав участь у звільненні Київщини та Харківщини, далі — Запорізький і Херсонський напрямки. У грудні 2023 року загинув від атаки ворожого FPV-дрона, прикривши побратимів."
+        }
+      ]
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "@id": "https://slon.life/#nav",
+      "name": [
+        "Спогади",
+        "Історії",
+        "Життєпис"
+      ],
+      "url": [
+        "https://slon.life/memories.html",
+        "https://slon.life/stories.html",
+        "https://slon.life/biography.html"
+      ]
+    }
+  ]
+}
