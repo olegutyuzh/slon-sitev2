@@ -1,0 +1,510 @@
+/* ===== БЛОК «ФРАГМЕНТИ ЖИТТЯ» — стилі для окремої сторінки ===== */
+/* Можна перенести в style.css замість існуючого блоку .life-fragments */
+
+.life-fragments {
+  background: #050608;
+}
+
+.life-page-intro {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.life-page-intro .section-subtitle {
+  margin: 0 auto;
+}
+
+/* Підблок: один тематичний "острівець" */
+.life-fragment {
+  display: grid;
+  gap: 18px;
+  margin-bottom: 72px;
+}
+
+.life-fragment:last-child {
+  margin-bottom: 0;
+}
+
+/* Варіант 1: фото зліва, текст праворуч */
+.life-fragment--left {
+  grid-template-columns: 1.4fr 1fr;
+  grid-template-areas:
+    "main text"
+    "thumbs thumbs";
+}
+
+.life-fragment-dots {
+  grid-column: 1 / -1;   /* на всю ширину гриду, якщо потрапив у грід */
+}
+
+/* Варіант 2: дзеркальний */
+.life-fragment--right {
+  grid-template-columns: 1fr 1.4fr;
+  grid-template-areas:
+    "text main"
+    "thumbs thumbs";
+}
+
+/* Варіант 3: панорама зверху */
+.life-fragment--full {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "main"
+    "text"
+    "thumbs";
+}
+
+.life-fragment-main { grid-area: main; }
+.life-fragment-text { grid-area: text; align-self: center; }
+.life-fragment-thumbs { grid-area: thumbs; }
+
+/* Головне фото підблоку */
+.life-fragment-main {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(230, 230, 230, 0.06);
+  background: #0B0C10;
+}
+
+.life-fragment-main a {
+  display: block;
+  height: 100%;
+}
+
+.life-fragment-main img {
+  width: 100%;
+  height: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  cursor: zoom-in;
+  transition: transform 0.4s ease, opacity 0.2s ease;
+}
+
+.life-fragment-main:hover img {
+  transform: scale(1.02);
+  opacity: 0.96;
+}
+
+/* Текстовий блок */
+.life-fragment-text {
+  padding: 8px 4px;
+}
+
+/* Категорія у стилі pill (як фільтри на memories.html) */
+.life-fragment-category {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border: 1px solid #C8A45A;              /* було rgba(200, 164, 90, 0.5) */
+  border-radius: 999px;
+  background: rgba(200, 164, 90, 0.08);   /* було rgba(11, 12, 16, 0.6) */
+  margin-bottom: 20px;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+
+.life-fragment-category-label {
+  color: #C8A45A;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+.life-fragment-category-count {
+  color: #C8A45A;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.life-fragment-card-author {
+  font-size: 14px;
+  color: #C8A45A;
+}
+
+.life-fragment-quote {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  line-height: 1.3;
+  color: #E6E6E6;
+  margin: 0 0 14px;
+  /* font-style: italic; */
+}
+
+.life-fragment-body {
+  font-size: 14px;
+  color: #B3B3B3;
+  margin: 0 0 12px;
+  line-height: 1.7;
+  font-style: italic;  
+}
+
+.life-fragment-attribution {
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: #C8A45A;
+}
+
+/* Сітка мініатюр */
+.life-fragment-thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.life-fragment-thumb {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(230, 230, 230, 0.06);
+  background: #0B0C10;
+  cursor: zoom-in;
+  display: block;
+}
+
+.life-fragment-thumb img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+.life-fragment-thumb:hover img {
+  transform: scale(1.04);
+  opacity: 0.92;
+}
+
+/* Центрування тексту в "панорамному" варіанті */
+.life-fragment--full .life-fragment-text {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 8px 16px;
+}
+
+/* Розділювач між підблоками */
+.life-fragment-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 72px;
+  max-width: 200px;
+}
+
+.life-fragment-divider::before,
+.life-fragment-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(200, 164, 90, 0),
+    rgba(200, 164, 90, 0.3),
+    rgba(200, 164, 90, 0)
+  );
+}
+
+.life-fragment-divider span {
+  padding: 0 16px;
+  color: rgba(200, 164, 90, 0.5);
+  font-size: 14px;
+}
+
+/* Кнопка повернення нагору сторінки */
+.life-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+  font-size: 13px;
+  color: #B3B3B3;
+  letter-spacing: 0.04em;
+  transition: color 0.2s ease;
+}
+
+.life-back:hover {
+  color: #C8A45A;
+}
+
+/* ===== Hero сторінки ===== */
+.life-hero {
+  padding: 128px 24px 56px;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at top, rgba(200, 164, 90, 0.08), transparent 60%),
+    #050608;
+  border-bottom: 1px solid rgba(38, 39, 51, 0.9);
+}
+
+.life-hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.life-hero-kicker {
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #C8A45A;
+  margin-bottom: 16px;
+}
+
+.life-hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(36px, 5vw, 52px);
+  line-height: 1.15;
+  margin: 0 0 20px;
+  font-weight: 400;
+}
+
+.life-hero-lead {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #B3B3B3;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* ===== Адаптив ===== */
+
+@media (max-width: 960px) {
+  .life-fragment--left,
+  .life-fragment--right {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "main"
+      "text"
+      "thumbs";
+  }
+
+  .life-fragment-main img {
+    max-height: 420px;
+  }
+}
+
+@media (max-width: 720px) {
+  .life-hero {
+    padding: 104px 18px 48px;
+  }
+
+  .life-fragment {
+    margin-bottom: 56px;
+  }
+
+  .life-fragment-divider {
+    margin-bottom: 56px;
+  }
+
+  .life-fragment-quote {
+    font-size: 22px;
+  }
+
+  .life-fragment-main img {
+    max-height: 360px;
+  }
+
+  /* Горизонтальна стрічка мініатюр на мобільному */
+  .life-fragment-thumbs {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    margin: 0 -18px;
+    padding: 4px 18px;
+    scrollbar-width: none;        /* Firefox + новий Chromium */
+    -ms-overflow-style: none;     /* старий Edge / IE */
+  }
+
+  .life-fragment-thumbs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .life-fragment-thumb {
+    flex: 0 0 62%;
+    scroll-snap-align: start;
+  }
+}
+
+/* ===== ЛАЙТБОКС ===== */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(5, 6, 8, 0.96);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  padding: 24px;
+}
+
+.lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-stage {
+  position: relative;
+  max-width: min(1100px, 92vw);
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.lightbox-image {
+  max-width: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid rgba(230, 230, 230, 0.08);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+}
+
+.lightbox-caption {
+  font-size: 13px;
+  color: #B3B3B3;
+  text-align: center;
+  letter-spacing: 0.02em;
+  max-width: 600px;
+  min-height: 18px;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  background: rgba(11, 12, 16, 0.7);
+  border: 1px solid rgba(200, 164, 90, 0.25);
+  color: #E6E6E6;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+  font-size: 20px;
+  line-height: 1;
+  font-family: inherit;
+  padding: 0;
+}
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: rgba(200, 164, 90, 0.15);
+  border-color: rgba(200, 164, 90, 0.6);
+}
+
+.lightbox-close { top: -12px; right: -12px; }
+.lightbox-prev  { left: -64px; top: 50%; transform: translateY(-50%); }
+.lightbox-next  { right: -64px; top: 50%; transform: translateY(-50%); }
+
+@media (max-width: 960px) {
+  .lightbox-prev  { left: 8px; }
+  .lightbox-next  { right: 8px; }
+  .lightbox-close { top: 8px; right: 8px; }
+}
+
+/* ===== Dots-індикатор під мініатюрами ===== */
+.life-fragment-dots {
+  display: none;                /* за замовч. ховаємо — потрібен лише на мобільному */
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.life-fragment-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(200, 164, 90, 0.25);
+  transition: background 0.25s ease, transform 0.25s ease, width 0.25s ease;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+}
+
+.life-fragment-dot.is-active {
+  background: #C8A45A;
+  width: 18px;                  /* активна — витягнута пігулка */
+}
+
+/* Показуємо точки тільки там, де є горизонтальний скрол (мобільний) */
+@media (max-width: 720px) {
+  .life-fragment-dots {
+    display: flex;
+  }
+}
+
+/* ===== Перемикач мови всередині лайтбокса ===== */
+.lightbox-lang {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 999px;
+  border: 1px solid rgba(200, 164, 90, 0.25);
+  background: rgba(11, 12, 16, 0.7);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  z-index: 2;
+}
+
+.lightbox-lang button {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  padding: 6px 14px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: #B3B3B3;
+  cursor: pointer;
+  border-radius: 999px;
+  transition: color 0.2s ease, background 0.2s ease;
+  min-width: 36px;
+  line-height: 1;
+}
+
+.lightbox-lang button:hover {
+  color: #E6E6E6;
+}
+
+.lightbox-lang button.is-active {
+  color: #0A0A0C;
+  background: #C8A45A;
+}
+
+.lightbox-lang button:focus-visible {
+  outline: 2px solid rgba(200, 164, 90, 0.5);
+  outline-offset: 2px;
+}
+
+/* На мобільному — трохи менше */
+@media (max-width: 720px) {
+  .lightbox-lang {
+    top: 12px;
+  }
+
+  .lightbox-lang button {
+    padding: 5px 10px;
+    font-size: 11px;
+    min-width: 32px;
+  }
+}
